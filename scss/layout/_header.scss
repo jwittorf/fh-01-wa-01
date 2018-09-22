@@ -1,0 +1,10 @@
+#header {
+    background: $header-bg;
+    padding: 20px;
+    #header-title,
+    #header-logo {
+        > * {
+            margin: 0;
+        }
+    }
+}

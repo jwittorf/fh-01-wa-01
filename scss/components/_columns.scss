@@ -1,0 +1,91 @@
+/* Wrapping row for columns framework */
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Float all columns-"left" to the left side */
+.col-20-l,
+.col-25-l,
+.col-30-l,
+.col-33-l,
+.col-40-l,
+.col-50-l,
+.col-60-l,
+.col-66-l,
+.col-70-l,
+.col-75-l,
+.col-80-l {
+    float: left;
+}
+
+/* Float all columns-"right" to the right side */
+.col-20-r,
+.col-25-r,
+.col-30-r,
+.col-33-r,
+.col-40-r,
+.col-50-r,
+.col-60-r,
+.col-66-r,
+.col-70-r,
+.col-75-r,
+.col-80-r {
+    float: right;
+}
+
+/* Set the width for every possible column */
+.col-20-l,
+.col-20-r {
+    width: 20%;
+}
+
+.col-25-l,
+.col-25-r {
+    width: 25%;
+}
+
+.col-30-l,
+.col-30-r {
+    width: 30%;
+}
+
+.col-33-l,
+.col-33-r {
+    width: 33.3333%;
+}
+
+.col-40-l,
+.col-40-r {
+    width: 40%;
+}
+
+.col-50-l,
+.col-50-r {
+    width: 50%;
+}
+
+.col-60-l,
+.col-60-r {
+    width: 60%;
+}
+
+.col-66-l,
+.col-66-r {
+    width: 66.6666%;
+}
+
+.col-70-l,
+.col-70-r {
+    width: 70%;
+}
+
+.col-75-l,
+.col-75-r {
+    width: 75%;
+}
+
+.col-80-l,
+.col-80-r {
+    width: 80%;
+}

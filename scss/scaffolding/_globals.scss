@@ -1,0 +1,23 @@
+body {
+    background: $body-bg;
+    font-size: $body-font-size;
+    font-family: $body-font-family;
+}
+
+a {
+    color: $link-color;
+    text-decoration: $link-text-decoration;
+    &:focus,
+    &:hover,
+    &:active {
+        color: $link-hover-color;
+        text-decoration: $link-hover-text-decoration;
+    }
+    // Improve, check with a
+    &[href^="http://"],
+    &[href^="https://"] {
+        &:before {
+            content: "Extern: ";
+        }
+    }
+}

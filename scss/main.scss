@@ -1,0 +1,35 @@
+// Das Hauptstylesheet, hier werden alle .scss-Dateien importiert und zu einer einzelnen .css-Datei kompiliert.
+// Es wird ein Sass-Compiler benötigt: http://sass-lang.com/dart-sass
+// Einfach unter https://github.com/sass/dart-sass/releases/ die aktuelle Version herunterladen und entpacken.
+// Das Verzeichnis muss dann noch dem PATH hinzugefügt werden, sodass der Compiler von überall aufgerufen werden kann,
+// siehe: https://github.com/sass/dart-sass#standalone bzw. https://katiek2.github.io/path-doc/
+// Beispiel, an das Ende von PATH folgendes "ranhängen": ;L:\dart-sass-1.14.0-windows-x64\dart-sass (falls Ruby vorher installiert war, aus PATH entfernen)
+// Wichtig: Alle bisher geöffneten Konsolenfenster müssen geschlossen und neu geöffnet werden, damit die Änderung erkannt wird.
+
+// Der Sass-Compiler wird innerhalb eines CMD-Fensters mit Ruby mit dem Befehl "sass --watch scss:css" gestartet,
+// läuft im Hintergrund und überwacht die Dateien. Wenn sich eine Datei ändert, wird der Compiler angestoßen und eine Datei generiert.
+
+// Alle mit einem Unterstrich versehenen Dateien werden nicht kompiliert, sondern dienen des Imports.
+// Durch die Nutzung von SCSS wird mittels Variabeln und Funktionen der Entwicklungsaufwand minimiert.
+
+// Unsere eigenen Variabeln
+@import "variables";
+
+// Basiskonfiguration von Elementen (ohne .Klasse, ohne #Id)
+@import "scaffolding/reset";
+@import "scaffolding/globals";
+@import "scaffolding/type";
+@import "scaffolding/lists";
+@import "scaffolding/tables";
+
+// Komponenten (alles mit einer .Klasse)
+//@import "components/XXX";
+@import "components/grid";
+@import "components/columns";
+
+// Bestandteile des Layouts (alles mit einer #Id)
+//@import "layout/XXX";
+@import "layout/header";
+@import "layout/nav-main";
+@import "layout/content";
+@import "layout/footer";

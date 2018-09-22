@@ -1,0 +1,80 @@
+// Colors
+$color-default: gray;
+$color-alternate: violet;
+
+$color-success: green;
+$color-danger: red;
+$color-warning: yellow;
+$color-info: blue;
+
+// Fonts
+$font-family-serif: "Times New Roman", Times, serif;
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+
+$font-size-base: 16px;
+$font-size-small: $font-size-base - 4;
+$font-size-large: $font-size-base + 4;
+
+$font-family-base: $font-family-sans-serif;
+$font-family-special: $font-family-serif;
+
+// Body
+$body-bg: white;
+$body-font-family: $font-family-base;
+$body-font-size: $font-size-base;
+
+// Headings
+$headings-font-family-default: $font-family-base;
+$headings-font-family-alternate: $font-family-special;
+$headings-font-weight: bold;
+
+$headings-margin-default: 10px 0 20px;
+
+$headings-color-default: $color-default;
+$headings-color-alternate: $color-alternate;
+
+$h1-font-family: $headings-font-family-alternate;
+$h1-color: $headings-color-alternate;
+
+$h2-font-family: $headings-font-family-default;
+$h2-color: $headings-color-default;
+
+$h3-font-family: $headings-font-family-alternate;
+$h3-color: $headings-color-alternate;
+
+$h4-font-family: $headings-font-family-default;
+$h4-color: $headings-color-default;
+
+$h5-font-family: $headings-font-family-default;
+$h5-color: $headings-color-default;
+
+$h6-font-family: $headings-font-family-default;
+$h6-color: $headings-color-default;
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $h1-font-size - 4;
+$h3-font-size: $h2-font-size - 4;
+$h4-font-size: $h3-font-size - 4;
+$h5-font-size: $h4-font-size - 4;
+$h6-font-size: $h5-font-size - 4;
+
+// Links
+$link-color: $color-alternate;
+$link-text-decoration: underline;
+
+$link-hover-color: darken($link-color, 20%);
+$link-hover-text-decoration: underline;
+
+// Buttons
+
+// Breakpoints
+
+// Header
+$header-bg: black;
+
+// Content
+
+// Nav-Main
+
+// Footer
+$footer-bg: gray;

@@ -1,0 +1,56 @@
+#nav-main {
+    width: 100%;
+    padding: 10px 20px;
+    ul {
+        width: 100%;
+        list-style: none;
+        display: block;
+        margin: 0;
+        padding: 0;
+        > li {
+            display: inline-block;
+            float: left;
+            margin: 0;
+            padding: 0;
+            a {
+                padding: 5px 10px;
+                display: block;
+            }
+            &:first-child {
+                a {
+                    margin-left: -10px;
+                }
+            }
+            // Second level
+            &.has-children {
+                position: relative;
+                top: 0;
+                left: 0;
+                > ul {
+                    display: none;
+                    position: absolute;
+                    top: $font-size-base + 10px;
+                    left: 0;
+                    background: #fff;
+                    > li {
+                        display: block;
+                        float: none;
+                        a {
+                            font-size: $font-size-small;
+                            &:first-child {
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                &:focus,
+                &:hover,
+                &:active {
+                    > ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

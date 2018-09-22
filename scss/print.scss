@@ -1,0 +1,9 @@
+// Hide elements not needed in print view, e.g. navigation
+#nav-main,
+#content-side {
+    display: none;
+}
+
+a {
+    // Output link url via content: ""
+}
