@@ -1,0 +1,7 @@
+.text-dimmed {
+    color: lighten($body-color, 30%);
+}
+
+.text-highlight {
+    color: darken($body-color, 20%);
+}
