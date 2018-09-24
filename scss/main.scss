@@ -29,13 +29,13 @@
 @import "scaffolding/lists";
 @import "scaffolding/tables";
 
-// Komponenten (alles mit einer .Klasse)
+// Komponenten, die wir häufiger pro Seite verwenden (alles mit einer .Klasse)
 //@import "components/XXX";
 @import "components/text";
+@import "components/container";
 @import "components/grid";
-@import "components/columns";
 
-// Bestandteile des Layouts (alles mit einer #Id)
+// Bestandteile des Layouts, die wir einmalig pro Seite verwenden (alles mit einer #Id)
 //@import "layout/XXX";
 @import "layout/header";
 @import "layout/nav-main";

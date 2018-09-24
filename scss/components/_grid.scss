@@ -1,5 +1,99 @@
-/* Container for a "boxed" layout */
-.container {
-    width: 960px;
-    margin: 0 auto;
+// Für die Aufteilung von Bereichen wie Kopf oder Inhalt bauen wir uns ein eigenes "Grid-Framework",
+// inspiriert von Dirk Jesse und seinem YAML-Framework (Yet Another Multicolumn Layout) http://www.yaml.de/
+
+// Wir nutzen immer eine .grid-wrapper Klasse zum Umschließen einer Grid-Reihe.
+// Innerhalb der Grid-Reihe werden die einzelnen Spalten mit Größe in Prozent und Ausrichtung angegeben,
+// (z. B. .grid-20-l und .grid-80-r, eine Reihe hat immer 100%!)
+
+// "Clearen" der "Floats" innerhalb des Wrappers, sicherstellen, dass der Wrapper vollständig sichtbar ist.
+// https://css-tricks.com/all-about-floats/
+.grid-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+// Alle "links"-Spalten nach links floaten
+.grid-20-l,
+.grid-25-l,
+.grid-30-l,
+.grid-33-l,
+.grid-40-l,
+.grid-50-l,
+.grid-60-l,
+.grid-66-l,
+.grid-70-l,
+.grid-75-l,
+.grid-80-l {
+    float: left;
+}
+
+// Alle "rechts"-Spalten nach rechts floaten
+.grid-20-r,
+.grid-25-r,
+.grid-30-r,
+.grid-33-r,
+.grid-40-r,
+.grid-50-r,
+.grid-60-r,
+.grid-66-r,
+.grid-70-r,
+.grid-75-r,
+.grid-80-r {
+    float: right;
+}
+
+// Prozentualte Breiten setzen für alle möglichen Spaltengrößen
+.grid-20-l,
+.grid-20-r {
+    width: 20%;
+}
+
+.grid-25-l,
+.grid-25-r {
+    width: 25%;
+}
+
+.grid-30-l,
+.grid-30-r {
+    width: 30%;
+}
+
+.grid-33-l,
+.grid-33-r {
+    width: 33.3333%;
+}
+
+.grid-40-l,
+.grid-40-r {
+    width: 40%;
+}
+
+.grid-50-l,
+.grid-50-r {
+    width: 50%;
+}
+
+.grid-60-l,
+.grid-60-r {
+    width: 60%;
+}
+
+.grid-66-l,
+.grid-66-r {
+    width: 66.6666%;
+}
+
+.grid-70-l,
+.grid-70-r {
+    width: 70%;
+}
+
+.grid-75-l,
+.grid-75-r {
+    width: 75%;
+}
+
+.grid-80-l,
+.grid-80-r {
+    width: 80%;
 }
