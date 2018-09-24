@@ -15,6 +15,13 @@
 // Unsere eigenen Variabeln
 @import "variables";
 
+// Drittanbieter Styles
+// Font Awesome Iconfont, hier nach Icons suchen:
+// https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free
+@import "vendor/fontawesome/fontawesome";
+@import "vendor/fontawesome/solid";
+@import "vendor/fontawesome/brands";
+
 // Basiskonfiguration von Elementen (ohne .Klasse, ohne #Id)
 @import "scaffolding/reset";
 @import "scaffolding/globals";
