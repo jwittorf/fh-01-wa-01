@@ -97,3 +97,43 @@
 .grid-80-r {
     width: 80%;
 }
+
+// Abstände zu den nächsten Spalten (je nach Ausrichtung), sodass z. B. Texte in Spalten nicht "aneinander kleben"
+.grid-inner-l {
+    padding: 0 $grid-inner-padding 0 0;
+    div,
+    h1, h2, h3, h4, h5, h6,
+    p,
+    ul, ol, dl,
+    table {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.grid-inner-c {
+    padding: 0 ($grid-inner-padding / 2);
+    div,
+    h1, h2, h3, h4, h5, h6,
+    p,
+    ul, ol, dl,
+    table {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.grid-inner-r {
+    padding: 0 0 0 $grid-inner-padding;
+    div,
+    h1, h2, h3, h4, h5, h6,
+    p,
+    ul, ol, dl,
+    table {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

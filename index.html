@@ -14,15 +14,28 @@
 </head>
 <body>
 <div id="wrapper">
-    <div class="container">
-        <div id="header" class="grid-wrapper">
-            <div id="header-title" class="grid-75-l">
-                <div class="h2">Aufgabenteil 1: Grundlagen der Entwicklung von XHTML-Dokumenten</div>
-            </div>
-            <div id="header-logo" class="grid-25-r">
-                <img src="img/logo-fh.png" alt="FH Kiel" width="58" height="43"/>
+    <div id="header">
+        <div class="container">
+            <div class="grid-wrapper">
+                <div class="grid-75-l">
+                    <div class="grid-inner-l">
+                        <div id="header-title">
+                            <div class="h3">&lt;Aufgabenteil Nummer="1"/&gt;</div>
+                            <div class="h4">{Grundlagen der Entwicklung von XHTML-Dokumenten}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-25-r">
+                    <div class="grid-inner-r">
+                        <div id="header-logo">
+                            <img src="img/logo-fh.gif" alt="FH Kiel" width="634" height="168"/>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div id="nav-main">
             <ul>
                 <li><a href="#">Listenpunkt im Menü-1</a></li>
@@ -40,288 +53,477 @@
                 </li>
             </ul>
         </div>
-        <div id="content" class="row">
+        <div id="content" class="grid-wrapper">
             <div id="content-main" class="grid-75-l">
-                <h1>Grundlegendes zu HTML und CSS</h1>
-                <p>
-                    <abbr title="Hypertext Markup Language">HTML</abbr> ist eine Auszeichnungssprache und dient der
-                    Strukturierung von Text und allen
-                    weiteren Inhalten, die auf einer Webseite enthalten sein können. Dazu gehören auch Bilder,
-                    Listen,
-                    Tabellen, Verlinkungen und vieles mehr. Die Verwendung von sogennanten <code>&lt;tags&gt;</code>
-                    für die zuvor genannten Elemente (Auflistung ist nicht vollständig)
-                    hilft einem Browser, der für die Darstellung/das Rendering der Seite zuständig ist, und anderen
-                    Maschinen wie Suchmaschinen oder Screenreadern die Inhalte der Webseite richtig zu verstehen und
-                    darauf basierend entsprechende Operationen durchzuführen. Diese kann die Darstellung, die
-                    Bewertung/Gewichtung oder die Betonung sein, dies obliegt der Maschine und ihrem Autor.
-                </p>
-                <p>
-                    <abbr title="Hypertext Markup Language">HTML</abbr> obliegt gewissen Regeln, die weltweit
-                    standardisiert sind und in der <abbr
-                        title="Document Type Declaration">DTD</abbr> hinterlegt werden. Der Autor gibt damit an,
-                    welchen
-                    Regeln er in seinem Dokument folgt. Mittels eines <a href="https://validator.w3c.org/"
-                                                                         target="_blank">Validierungsdienstes</a>
-                    kann
-                    überprüft werden, ob die Regeln eingehalten werden. Bei einer Nichteinhaltung kann es zu
-                    Problemen
-                    bei der Verarbeitung des Dokuments kommen, sodass z. B. ein Browser die Seite nicht korrekt
-                    darstellt oder andere externe Programme die Datei nicht akzeptieren.
-                </p>
-                <p>
-                    Idealerweise erfolgt zur besseren Wartbarkeit und Performance einer Webseite bzw. Website (Verbund
-                    mehrerer Webseiten, quasi ein Portal oder eine ganze Präsenz) eine strikte Trennung von Inhalt und
-                    Gestaltung. Im <abbr title="Hypertext Markup Language">HTML</abbr> steht nur der Inhalt, die
-                    Gestaltung wird in <abbr title="Cascading Stylesheets">CSS</abbr> ausgelagert, idealerweise in eine
-                    eigene Datei, sodass mehrere Seiten die gleiche Gestaltung verwenden können.
-                </p>
-                <p>Mit <abbr title="Cascading Stylesheets">CSS</abbr> wird die Gestaltung der <abbr
-                        title="Hypertext Markup Language">HTML</abbr>-Elemente bzw. des Dokuments, in dem die Datei
-                    eingebunden festgelegt, man könnte <abbr title="Cascading Stylesheets">CSS</abbr> daher auch als
-                    Konfigurationssprache bezeichnen. Das Zusammenspiel ist ähnlich eines Word-Dokuments mit
-                    Formatvorlagen, wobei <abbr title="Hypertext Markup Language">HTML</abbr> den Inhalt und <abbr
-                            title="Cascading Stylesheets">CSS</abbr> die Formatvorlagen und darin enthaltenen
-                    Anweisungen darstellt - ändert man die Formatvorlage, ändert sich auch der Inhalt, auf dem die
-                    Formatvorlage angewendet ist. <abbr title="Cascading Stylesheets">CSS</abbr> verfügt über sehr
-                    mächtige Werkzeuge wie Operatoren oder Grafik- und Animationsanweisungen.</p>
-                <p class="text-dimmed">
-                    In der modernen Webentwicklung werden zunehmend <abbr title="Cascading Stylesheets">CSS</abbr>-Preprozessoren
-                    wie <a
-                        href="https://sass-lang.com" target="_blank"><abbr
-                        title="??? Syntacticially Awesome Stylesheets ???">SASS</abbr>/SCSS</a> oder LESS eingesetzt,
-                    die das
-                    Schreiben von (besonders komplexen) <abbr title="Cascading Stylesheets">CSS</abbr>-Dateien
-                    erleichtert, beschleunigt und weitere Funktionen wie die Nutzung von Funktionen, Skripten und
-                    Variabeln zulässt. Die Nutzung von Variablen gewährleistet so z. B. auch eine konsistente Nutzung
-                    der gleichen Werte wie Farben, Schriften oder Abständen. Die Preprozessoren "überwachen" eine Datei
-                    oder einen ganzen Ordner auf Änderungen und kompilieren in (Milli)-Sekunden eine vollständige und
-                    <abbr title="Cascading Stylesheets">CSS</abbr>-Datei, die "ganz normal" weiterverarbeitet werden
-                    kann. Sie stellen also eine Unterstützung für die Entwickler dar, ohne negative Auswirkung auf die
-                    Besucher
-                    der Seite. Die Auswirkungen sind sogar positiv, da z. B. bei der Nutzung von <abbr
-                        title="Cascading Stylesheets">CSS</abbr>-Frameworks wie "Twitter Bootstrap" die einzelnen
-                    Komponenten direkt an die Bedürfnisse des Autors angepasst und so eine eigene, individuelle Version
-                    des Frameworks mit eigenen Werten (durch Nutzung von Variabeln) generiert wird. Diese müssen nicht
-                    durch zusätzlichen, eigenen <abbr title="Cascading Stylesheets">CSS</abbr>-Code überschrieben
-                    werden, was wiederum zu einer Verbesserung der Performance führt. Außerdem kann der Entwickler
-                    Funktionen des Frameworks nutzen und erweitern.
-                </p>
-                <p class="text-dimmed">
-                    In speziellen Fällen wird ein Teil des <abbr title="Cascading Stylesheets">CSS</abbr>-Codes in das
-                    <code>&lt;head&gt;</code>-Element
-                    geschreiben, um die Wartezeit für das Herunterladen der Datei zu vermeiden. Dieser Sonderfall dient
-                    der Performance-Optimierung und enthält nur Stil-Informationen, die für die Darstellung der Elemente
-                    benötigt werden, die beim Laden der Seite im sichtbaren Bereich erscheinen (auch bekannt als
-                    Viewport). Zur Generierung einer solchen Datei kann z. B. das Node.js-Plugin "Penthouse" verwendet
-                    werden, welches unter Nutzung des "Phantom"-Browsers und entsprechender Konfiguration der Viewports,
-                    die benötigten <abbr title="Cascading Stylesheets">CSS</abbr>-Anweisungen aus einer Datei extrahiert
-                    und z. B. in eine eigene Datei schreibt, deren Inhalt ausgelesen und in den
-                    <code>&lt;head&gt;</code>-Bereich geschrieben werden kann.
-                </p>
-                <h2>Überschriften in HTML</h2>
-                <p>Überschriften werden in HTML über die Elemente <code>&lt;h1&gt;</code> bis <code>&lt;h6&gt;</code>
-                    dargestellt. Sie definieren die "Wichtigkeit" der Überschrift in absteigender Reihenfolge und dienen
-                    der Strukturierung (ähnlich wie in einem Buch mit Kapitelüberschriften und Unterkaptieln). Weiterhin
-                    können sie von Suchmaschinen und Screenreadern genutzt werden, um den Inhalt der Seite besser zu
-                    verstehen oder etwas anders zu betonen, um einen Kontext herzustellen.</p>
-                <p class="text-dimmed">Hinweis: eine ganze Zeit lang galt es gängige Praxis für Suchmaschinen (besonders
-                    Google) nur eine <code>&lt;h1&gt;</code>-Überschrift zu verwenden, um zu verdeutlichen, was das
-                    Hauptthema (Keyword) der Seite ist. Weitere Aspekte waren auch die Nutzung von Document Outlines.
-                    Mit den neuen Tags von HTML5 ist diese Diskussion jedoch obsolet und es wird sogar empfohlen, in
-                    manchen Fällen mehrere <code>&lt;h1&gt;</code>-Überschriften zu verwenden. Wie so oft kommt es auch
-                    wieder auf den Kontext und die korrekte und semantisch richtige Anwendung an, weitere Informationen
-                    sind
-                    <a href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824"
-                       target="_blank">diesem Blog-Artikel zu entnehmen</a>.</p>
-                <h2>Eine Überschrift 2. Ordnung mit nachfolgenden Textauszeichnungen</h2>
-                <p>In einem Fließtext können bestimmte Bereiche entweder über <strong>stark betont werden</strong> oder
-                </p>
-                <h3>Überschrift 3. Ordnung</h3>
-                <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing </em>elit. A accusantium aliquam asperiores
-                    doloremque
-                    exercitationem explicabo ipsam magnam nemo vel, vitae! Amet deserunt eaque illum neque officia
-                    pariatur perferendis quia repellendus rerum sequi. Ad, cupiditate distinctio doloremque enim est
-                    incidunt ipsa ipsam ipsum magnam, natus placeat porro praesentium quaerat sed unde!</p>
-                <h4>Überschrift 4. Ordnung</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est itaque magni maiores neque ullam.
-                    Consectetur facilis ipsa labore perferendis quam.</p>
-                <h5>Überschrift 5. Ordnung</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur blanditiis
-                    cumque debitis deleniti dolore doloremque eius enim exercitationem expedita facilis inventore
-                    laudantium, maiores natus obcaecati quos, sunt unde.</p>
-                <h6>Überschrift 6. Ordnung</h6>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iste.</p>
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Tabellenkopf 1</th>
-                        <th>Tabellenkopf 2</th>
-                        <th>Tabellenkopf 3</th>
-                        <th>Tabellenkopf 4</th>
-                        <th>Tabellenkopf 5</th>
-                    </tr>
-                    </thead>
-                    <tfoot>
-                    <tr>
-                        <td>Tabellenfuß 1</td>
-                        <td>Tabellenfuß 2</td>
-                        <td>Tabellenfuß 3</td>
-                        <td>Tabellenfuß 4</td>
-                        <td>Tabellenfuß 5</td>
-                    </tr>
-                    </tfoot>
-                    <tbody>
-                    <tr>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Aspernatur expedita facilis laudantium molestias porro
-                            quasi quos voluptate voluptatem? Ad, incidunt.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Aliquam aperiam atque beatae corporis doloribus et ex
-                            inventore natus repellendus rerum!
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Commodi consequuntur fugiat harum nostrum numquam omnis
-                            quisquam veniam voluptas voluptate! Exercitationem?
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Amet commodi delectus earum itaque labore,
-                            necessitatibus odio rerum sunt veritatis voluptatem.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Assumenda eius eveniet nostrum nulla officia quasi rerum
-                            vitae voluptatibus. Distinctio, nisi.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Animi ex impedit ipsum molestias mollitia nobis nulla
-                            odio perferendis reprehenderit, veniam.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Architecto at iure natus, perferendis quidem reiciendis
-                            tempore. Consectetur esse libero placeat?
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Ab adipisci amet dolorum magnam nostrum quaerat quidem,
-                            repellendus reprehenderit. Libero, nam.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Cumque incidunt inventore nostrum provident reiciendis
-                            sequi similique! Culpa iure nulla quis?
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Accusamus commodi ipsum quibusdam quo sequi. Eos facilis
-                            labore sed sit suscipit.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Ab adipisci atque cumque delectus dolor eius est fugit,
-                            qui quia vitae.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Consequatur deleniti ducimus facere pariatur quam quos
-                            repudiandae sed velit veniam. Impedit!
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Autem doloremque ex numquam odio quaerat quo recusandae
-                            sed sit, voluptatibus voluptatum.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Alias consectetur eius facere fugit laboriosam non sequi
-                            tempora totam vel velit.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. At autem consequuntur culpa dolorum itaque nisi
-                            perferendis ullam ut veniam voluptatibus?
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Aspernatur commodi doloremque ducimus est impedit nobis
-                            optio pariatur praesentium sapiente similique.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Aliquid at autem deserunt eos fugiat iure nisi officiis
-                            qui quis ratione!
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Accusantium autem cumque omnis tempore unde. Dolorem
-                            enim mollitia possimus vel voluptate.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Consequatur debitis delectus doloremque esse fuga maxime
-                            perferendis quam sint suscipit unde?
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Delectus explicabo hic ipsa laboriosam quibusdam
-                            repellendus unde veniam voluptates? Expedita, nam!
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. A at cupiditate dolores earum eos incidunt minus numquam
-                            odit reprehenderit totam?
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. At cum ex illum inventore mollitia numquam optio qui
-                            repudiandae sit unde!
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Accusantium atque autem eligendi voluptatibus. Beatae
-                            explicabo officiis repellendus sed? Qui, velit.
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Ab cumque debitis harum id maiores molestiae nihil quo
-                            repellat similique voluptate!
-                        </td>
-                        <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Delectus expedita facilis odit, omnis saepe tenetur vel.
-                            Distinctio nisi optio quos.
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-                <ul>
-                    <li>Unordered Listitem</li>
-                    <li>Unordered Listitem</li>
-                    <li>Unordered Listitem</li>
-                    <li>Unordered Listitem</li>
-                    <li>Unordered Listitem</li>
-                </ul>
-                <ol>
-                    <li>Ordered Listitem</li>
-                    <li>Ordered Listitem</li>
-                    <li>Ordered Listitem</li>
-                    <li>Ordered Listitem</li>
-                    <li>Ordered Listitem</li>
-                </ol>
-                <dl>
-                    <dt>Definition-Title</dt>
-                    <dd>Definition-Data</dd>
-                    <dt>Definition-Title</dt>
-                    <dd>Definition-Data</dd>
-                    <dt>Definition-Title</dt>
-                    <dd>Definition-Data</dd>
-                    <dt>Definition-Title</dt>
-                    <dd>Definition-Data</dd>
-                    <dt>Definition-Title</dt>
-                    <dd>Definition-Data</dd>
-                </dl>
+                <div class="grid-inner-l">
+                    <h1>Grundlegendes zu HTML und CSS</h1>
+                    <p><abbr title="Hypertext Markup Language">HTML</abbr> ist eine Auszeichnungssprache und
+                        dient
+                        der
+                        Strukturierung von Text und allen
+                        weiteren Inhalten, die auf einer Webseite enthalten sein können. Dazu gehören auch
+                        Bilder,
+                        Listen,
+                        Tabellen, Verlinkungen und vieles mehr. Die Verwendung von sogennanten
+                        <code>&lt;tags&gt;</code>
+                        für die zuvor genannten Elemente (Auflistung ist nicht vollständig)
+                        hilft einem Browser, der für die Darstellung/das Rendering der Seite zuständig ist, und
+                        anderen
+                        Maschinen wie Suchmaschinen oder Screenreadern die Inhalte der Webseite richtig zu
+                        verstehen
+                        und
+                        darauf basierend entsprechende Operationen durchzuführen. Diese kann die Darstellung,
+                        die
+                        Bewertung/Gewichtung oder die Betonung sein, dies obliegt der Maschine und ihrem Autor.
+                    </p>
+                    <p>
+                        <abbr title="Hypertext Markup Language">HTML</abbr> obliegt gewissen Regeln, die
+                        weltweit
+                        standardisiert sind und in der <abbr
+                            title="Document Type Declaration">DTD</abbr> hinterlegt werden. Der Autor gibt damit
+                        an,
+                        welchen
+                        Regeln er in seinem Dokument folgt. Mittels eines <a href="https://validator.w3c.org/"
+                                                                             target="_blank">Validierungsdienstes</a>
+                        kann
+                        überprüft werden, ob die Regeln eingehalten werden. Bei einer Nichteinhaltung kann es zu
+                        Problemen
+                        bei der Verarbeitung des Dokuments kommen, sodass z. B. ein Browser die Seite nicht
+                        korrekt
+                        darstellt oder andere externe Programme die Datei nicht akzeptieren.
+                    </p>
+                    <p>
+                        Idealerweise erfolgt zur besseren Wartbarkeit und Performance einer Webseite bzw.
+                        Website
+                        (Verbund
+                        mehrerer Webseiten, quasi ein Portal oder eine ganze Präsenz) eine strikte Trennung von
+                        Inhalt
+                        und
+                        Gestaltung. Im <abbr title="Hypertext Markup Language">HTML</abbr> steht nur der Inhalt,
+                        die
+                        Gestaltung wird in <abbr title="Cascading Stylesheets">CSS</abbr> ausgelagert,
+                        idealerweise
+                        in
+                        eine
+                        eigene Datei, sodass mehrere Seiten die gleiche Gestaltung verwenden können.
+                    </p>
+                    <p>Mit <abbr title="Cascading Stylesheets">CSS</abbr> wird die Gestaltung der <abbr
+                            title="Hypertext Markup Language">HTML</abbr>-Elemente bzw. des Dokuments, in dem
+                        die
+                        Datei
+                        eingebunden festgelegt, man könnte <abbr title="Cascading Stylesheets">CSS</abbr> daher
+                        auch
+                        als
+                        Konfigurationssprache bezeichnen. Das Zusammenspiel ist ähnlich eines Word-Dokuments mit
+                        Formatvorlagen, wobei <abbr title="Hypertext Markup Language">HTML</abbr> den Inhalt und
+                        <abbr
+                                title="Cascading Stylesheets">CSS</abbr> die Formatvorlagen und darin
+                        enthaltenen
+                        Anweisungen darstellt - ändert man die Formatvorlage, ändert sich auch der Inhalt, auf
+                        dem
+                        die
+                        Formatvorlage angewendet ist. <abbr title="Cascading Stylesheets">CSS</abbr> verfügt
+                        über
+                        sehr
+                        mächtige Werkzeuge wie Operatoren oder Grafik- und Animationsanweisungen.</p>
+                    <p class="text-dimmed">
+                        In der modernen Webentwicklung werden zunehmend <abbr
+                            title="Cascading Stylesheets">CSS</abbr>-Preprozessoren
+                        wie <a
+                            href="https://sass-lang.com" target="_blank"><abbr
+                            title="??? Syntacticially Awesome Stylesheets ???">SASS</abbr>/SCSS</a> oder LESS
+                        eingesetzt,
+                        die das
+                        Schreiben von (besonders komplexen) <abbr title="Cascading Stylesheets">CSS</abbr>-Dateien
+                        erleichtert, beschleunigt und weitere Funktionen wie die Nutzung von Funktionen,
+                        Skripten
+                        und
+                        Variabeln zulässt. Die Nutzung von Variablen gewährleistet so z. B. auch eine
+                        konsistente
+                        Nutzung
+                        der gleichen Werte wie Farben, Schriften oder Abständen. Die Preprozessoren "überwachen"
+                        eine
+                        Datei
+                        oder einen ganzen Ordner auf Änderungen und kompilieren in (Milli)-Sekunden eine
+                        vollständige
+                        und
+                        <abbr title="Cascading Stylesheets">CSS</abbr>-Datei, die "ganz normal"
+                        weiterverarbeitet
+                        werden
+                        kann. Sie stellen also eine Unterstützung für die Entwickler dar, ohne negative
+                        Auswirkung
+                        auf
+                        die
+                        Besucher
+                        der Seite. Die Auswirkungen sind sogar positiv, da z. B. bei der Nutzung von <abbr
+                            title="Cascading Stylesheets">CSS</abbr>-Frameworks wie "Twitter Bootstrap" die
+                        einzelnen
+                        Komponenten direkt an die Bedürfnisse des Autors angepasst und so eine eigene,
+                        individuelle
+                        Version
+                        des Frameworks mit eigenen Werten (durch Nutzung von Variabeln) generiert wird. Diese
+                        müssen
+                        nicht
+                        durch zusätzlichen, eigenen <abbr title="Cascading Stylesheets">CSS</abbr>-Code
+                        überschrieben
+                        werden, was wiederum zu einer Verbesserung der Performance führt. Außerdem kann der
+                        Entwickler
+                        Funktionen des Frameworks nutzen und erweitern.
+                    </p>
+                    <p class="text-dimmed">
+                        In speziellen Fällen wird ein Teil des <abbr title="Cascading Stylesheets">CSS</abbr>-Codes
+                        in
+                        das
+                        <code>&lt;head&gt;</code>-Element
+                        geschreiben, um die Wartezeit für das Herunterladen der Datei zu vermeiden. Dieser
+                        Sonderfall
+                        dient
+                        der Performance-Optimierung und enthält nur Stil-Informationen, die für die Darstellung
+                        der
+                        Elemente
+                        benötigt werden, die beim Laden der Seite im sichtbaren Bereich erscheinen (auch bekannt
+                        als
+                        Viewport). Zur Generierung einer solchen Datei kann z. B. das Node.js-Plugin "Penthouse"
+                        verwendet
+                        werden, welches unter Nutzung des "Phantom"-Browsers und entsprechender Konfiguration
+                        der
+                        Viewports,
+                        die benötigten <abbr title="Cascading Stylesheets">CSS</abbr>-Anweisungen aus einer
+                        Datei
+                        extrahiert
+                        und z. B. in eine eigene Datei schreibt, deren Inhalt ausgelesen und in den
+                        <code>&lt;head&gt;</code>-Bereich geschrieben werden kann.
+                    </p>
+                    <h2>Überschriften in HTML</h2>
+                    <p>Überschriften werden in HTML über die Elemente <code>&lt;h1&gt;</code> bis
+                        <code>&lt;h6&gt;</code>
+                        dargestellt. Sie definieren die "Wichtigkeit" der Überschrift in absteigender
+                        Reihenfolge
+                        und
+                        dienen
+                        der Strukturierung (ähnlich wie in einem Buch mit Kapitelüberschriften und
+                        Unterkaptieln).
+                        Weiterhin
+                        können sie von Suchmaschinen und Screenreadern genutzt werden, um den Inhalt der Seite
+                        besser zu
+                        verstehen oder etwas anders zu betonen, um einen Kontext herzustellen.</p>
+                    <p class="text-dimmed">Hinweis: eine ganze Zeit lang galt es gängige Praxis für
+                        Suchmaschinen
+                        (besonders
+                        Google) nur eine <code>&lt;h1&gt;</code>-Überschrift zu verwenden, um zu verdeutlichen,
+                        was
+                        das
+                        Hauptthema (Keyword) der Seite ist. Weitere Aspekte waren auch die Nutzung von Document
+                        Outlines.
+                        Mit den neuen Tags von HTML5 ist diese Diskussion jedoch obsolet und es wird sogar
+                        empfohlen, in
+                        manchen Fällen mehrere <code>&lt;h1&gt;</code>-Überschriften zu verwenden. Wie so oft
+                        kommt
+                        es
+                        auch
+                        wieder auf den Kontext und die korrekte und semantisch richtige Anwendung an, weitere
+                        Informationen
+                        sind
+                        <a href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824"
+                           target="_blank">diesem Blog-Artikel zu entnehmen</a>.</p>
+                    <h2>Eine Überschrift 2. Ordnung mit nachfolgenden Textauszeichnungen</h2>
+                    <p>In einem Fließtext können bestimmte Bereiche entweder über <strong>stark betont
+                        werden</strong>
+                        oder
+                    </p>
+                    <h3>Überschrift 3. Ordnung</h3>
+                    <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing </em>elit. A accusantium aliquam
+                        asperiores
+                        doloremque
+                        exercitationem explicabo ipsam magnam nemo vel, vitae! Amet deserunt eaque illum neque
+                        officia
+                        pariatur perferendis quia repellendus rerum sequi. Ad, cupiditate distinctio doloremque
+                        enim
+                        est
+                        incidunt ipsa ipsam ipsum magnam, natus placeat porro praesentium quaerat sed unde!</p>
+                    <h4>Überschrift 4. Ordnung</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est itaque magni maiores neque
+                        ullam.
+                        Consectetur facilis ipsa labore perferendis quam.</p>
+                    <h5>Überschrift 5. Ordnung</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur
+                        blanditiis
+                        cumque debitis deleniti dolore doloremque eius enim exercitationem expedita facilis
+                        inventore
+                        laudantium, maiores natus obcaecati quos, sunt unde.</p>
+                    <h6>Überschrift 6. Ordnung</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iste.</p>
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Tabellenkopf 1</th>
+                            <th>Tabellenkopf 2</th>
+                            <th>Tabellenkopf 3</th>
+                            <th>Tabellenkopf 4</th>
+                            <th>Tabellenkopf 5</th>
+                        </tr>
+                        </thead>
+                        <tfoot>
+                        <tr>
+                            <td>Tabellenfuß 1</td>
+                            <td>Tabellenfuß 2</td>
+                            <td>Tabellenfuß 3</td>
+                            <td>Tabellenfuß 4</td>
+                            <td>Tabellenfuß 5</td>
+                        </tr>
+                        </tfoot>
+                        <tbody>
+                        <tr>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Aspernatur expedita facilis laudantium
+                                molestias
+                                porro
+                                quasi quos voluptate voluptatem? Ad, incidunt.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Aliquam aperiam atque beatae corporis
+                                doloribus
+                                et
+                                ex
+                                inventore natus repellendus rerum!
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Commodi consequuntur fugiat harum nostrum
+                                numquam
+                                omnis
+                                quisquam veniam voluptas voluptate! Exercitationem?
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Amet commodi delectus earum itaque labore,
+                                necessitatibus odio rerum sunt veritatis voluptatem.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Assumenda eius eveniet nostrum nulla officia
+                                quasi
+                                rerum
+                                vitae voluptatibus. Distinctio, nisi.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Animi ex impedit ipsum molestias mollitia
+                                nobis
+                                nulla
+                                odio perferendis reprehenderit, veniam.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Architecto at iure natus, perferendis quidem
+                                reiciendis
+                                tempore. Consectetur esse libero placeat?
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Ab adipisci amet dolorum magnam nostrum
+                                quaerat
+                                quidem,
+                                repellendus reprehenderit. Libero, nam.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Cumque incidunt inventore nostrum provident
+                                reiciendis
+                                sequi similique! Culpa iure nulla quis?
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Accusamus commodi ipsum quibusdam quo sequi.
+                                Eos
+                                facilis
+                                labore sed sit suscipit.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Ab adipisci atque cumque delectus dolor eius
+                                est
+                                fugit,
+                                qui quia vitae.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Consequatur deleniti ducimus facere pariatur
+                                quam
+                                quos
+                                repudiandae sed velit veniam. Impedit!
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Autem doloremque ex numquam odio quaerat quo
+                                recusandae
+                                sed sit, voluptatibus voluptatum.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Alias consectetur eius facere fugit
+                                laboriosam
+                                non
+                                sequi
+                                tempora totam vel velit.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. At autem consequuntur culpa dolorum itaque
+                                nisi
+                                perferendis ullam ut veniam voluptatibus?
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Aspernatur commodi doloremque ducimus est
+                                impedit
+                                nobis
+                                optio pariatur praesentium sapiente similique.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Aliquid at autem deserunt eos fugiat iure
+                                nisi
+                                officiis
+                                qui quis ratione!
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Accusantium autem cumque omnis tempore unde.
+                                Dolorem
+                                enim mollitia possimus vel voluptate.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Consequatur debitis delectus doloremque esse
+                                fuga
+                                maxime
+                                perferendis quam sint suscipit unde?
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Delectus explicabo hic ipsa laboriosam
+                                quibusdam
+                                repellendus unde veniam voluptates? Expedita, nam!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. A at cupiditate dolores earum eos incidunt
+                                minus
+                                numquam
+                                odit reprehenderit totam?
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. At cum ex illum inventore mollitia numquam
+                                optio
+                                qui
+                                repudiandae sit unde!
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Accusantium atque autem eligendi
+                                voluptatibus.
+                                Beatae
+                                explicabo officiis repellendus sed? Qui, velit.
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Ab cumque debitis harum id maiores molestiae
+                                nihil
+                                quo
+                                repellat similique voluptate!
+                            </td>
+                            <td>Hier stehen Daten in der Tabelle. Zusätzlich noch etwas Lorem ipsum: Lorem ipsum
+                                dolor
+                                sit
+                                amet, consectetur adipisicing elit. Delectus expedita facilis odit, omnis saepe
+                                tenetur
+                                vel.
+                                Distinctio nisi optio quos.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <ul>
+                        <li>Unordered Listitem</li>
+                        <li>Unordered Listitem</li>
+                        <li>Unordered Listitem</li>
+                        <li>Unordered Listitem</li>
+                        <li>Unordered Listitem</li>
+                    </ul>
+                    <ol>
+                        <li>Ordered Listitem</li>
+                        <li>Ordered Listitem</li>
+                        <li>Ordered Listitem</li>
+                        <li>Ordered Listitem</li>
+                        <li>Ordered Listitem</li>
+                    </ol>
+                    <dl>
+                        <dt>Definition-Title</dt>
+                        <dd>Definition-Data</dd>
+                        <dt>Definition-Title</dt>
+                        <dd>Definition-Data</dd>
+                        <dt>Definition-Title</dt>
+                        <dd>Definition-Data</dd>
+                        <dt>Definition-Title</dt>
+                        <dd>Definition-Data</dd>
+                        <dt>Definition-Title</dt>
+                        <dd>Definition-Data</dd>
+                    </dl>
+                </div>
             </div>
             <div id="content-side" class="grid-25-r">
-                <ul>
-                    <li><a href="https://twitter.com/">Twitter</a></li>
-                    <li><a href="https://facebook.com/">Facebook</a></li>
-                    <li><a href="https://google.com/">Google</a></li>
-                    <li><a href="https://youtube.com/">Youtube</a></li>
-                    <li><a href="https://die-netzwerkstatt.de/">die NetzWerkstatt</a></li>
-                </ul>
+                <div class="grid-inner-r">
+                    <ul>
+                        <li><a href="https://twitter.com/">Twitter</a></li>
+                        <li><a href="https://facebook.com/">Facebook</a></li>
+                        <li><a href="https://google.com/">Google</a></li>
+                        <li><a href="https://youtube.com/">Youtube</a></li>
+                        <li><a href="https://die-netzwerkstatt.de/">die NetzWerkstatt</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div id="footer">
-            Konzeption, Gestaltung, Umsetzung und Verantwortung: <a href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
+    </div>
+    <div id="footer">
+        <div class="container">
+            Konzeption, Gestaltung, Umsetzung und Verantwortung: <a
+                href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
             Beeck</a> | <a href="mailto:julian.wittorf@student.fh-kiel.de">Julian Wittorf</a>
         </div>
     </div>
