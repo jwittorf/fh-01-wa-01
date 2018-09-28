@@ -2,6 +2,7 @@ body {
     background: $body-bg;
     color: $body-color;
     font-size: $body-font-size;
+    line-height: $body-line-height;
     font-family: $body-font-family;
 }
 
@@ -18,7 +19,20 @@ a {
     &[href^="http://"],
     &[href^="https://"] {
         &:before {
-            content: "Extern: ";
+            @extend %fa-icon;
+            @extend .fas;
+            content: fa-content($fa-var-external-link-alt);
+            content: fa-content($fa-var-external-link-square-alt);
+            margin-right: 10px;
         }
     }
+}
+
+::selection {
+    background: rgba(red($selection-bg), green($selection-bg), blue($selection-bg), .99);
+    color: $selection-color;
+}
+::-moz-selection {
+    background: rgba(red($selection-bg), green($selection-bg), blue($selection-bg), .99);
+    color: $selection-color;
 }

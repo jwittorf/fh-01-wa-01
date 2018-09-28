@@ -1,43 +1,62 @@
 // Colors
-$color-default: gray;
-$color-alternate: violet;
+$gray: #272822;
+$brown: #75715E;
+$white: #F8F8F0;
+$red: #CD0000;
+$pink: #F92672;
+$yellow: #E6DB74;
+$orange: #FD971F;
+$purple: #AE81FF;
+$blue: #66D9EF;
+$green: #A6E22E;
+$lime: #7FE22E;
 
-$color-success: green;
-$color-danger: red;
-$color-warning: yellow;
-$color-info: blue;
+// Color roles
+$color-default: $brown;
+$color-alternate: $pink;
+
+$color-success: $green;
+$color-danger: $red;
+$color-warning: $yellow;
+$color-info: $blue;
 
 // Fonts
+$font-family-monospace: "Consolas", "Monaco", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New";
 $font-family-serif: "Times New Roman", Times, serif;
-$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$font-family-sans-serif: "Segoe UI", Helvetica, "Arial Narrow", Arial, sans-serif;
 
-$font-size-base: 16px;
+$font-size-base: 20px;
 $font-size-small: $font-size-base - 4;
 $font-size-large: $font-size-base + 4;
 
-$font-family-base: $font-family-sans-serif;
-$font-family-special: $font-family-serif;
+$font-line-height-base: $font-size-base * 1.5;
+
+$font-family-base: $font-family-monospace;
+$font-family-special: $font-family-sans-serif;
 
 // Body
-$body-bg: white;
+$body-bg: $gray;
 $body-color: $color-default;
 $body-font-family: $font-family-base;
 $body-font-size: $font-size-base;
+$body-line-height: $font-line-height-base;
+$body-margin-default: 10px 0 20px;
 
 // Headings
 $headings-font-family-default: $font-family-base;
 $headings-font-family-alternate: $font-family-special;
 $headings-font-weight: bold;
+$headings-line-height: 1.25em;
 
-$headings-margin-default: 10px 0 20px;
+$headings-margin-default: 1.5em 0 .5em;
 
-$headings-color-default: $color-default;
-$headings-color-alternate: $color-alternate;
+$headings-color-default: $blue;
+$headings-color-alternate: $green;
 
 $h1-font-family: $headings-font-family-alternate;
 $h1-color: $headings-color-alternate;
 
-$h2-font-family: $headings-font-family-default;
+$h2-font-family: $headings-font-family-alternate;
 $h2-color: $headings-color-default;
 
 $h3-font-family: $headings-font-family-alternate;
@@ -74,7 +93,7 @@ $grid-inner-padding: 30px;
 // Breakpoints
 
 // Header
-$header-bg: black;
+$header-bg: #fff;
 
 // Content
 
@@ -82,6 +101,10 @@ $header-bg: black;
 
 // Footer
 $footer-bg: gray;
+
+// Selection
+$selection-bg: $pink;
+$selection-color: $white;
 
 // Vendors
 

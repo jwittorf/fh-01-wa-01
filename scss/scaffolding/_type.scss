@@ -3,6 +3,7 @@ h1, h2, h3, h4, h5, h6,
     color: $headings-color-default;
     font-weight: $headings-font-weight;
     margin: $headings-margin-default;
+    line-height: $headings-line-height;
 }
 
 h1, .h1 {
@@ -19,7 +20,6 @@ h2, .h2 {
 h3, .h3 {
     font-family: $h3-font-family;
     font-size: $h3-font-size;
-    color: $headings-color-alternate;
 }
 
 h4, .h4 {
@@ -35,4 +35,10 @@ h5, .h5 {
 h6, .h6 {
     font-family: $h6-font-family;
     font-size: $h6-font-size;
+}
+
+p,
+ul, ol, dl,
+table {
+    margin: 1em 0 .5em;
 }
