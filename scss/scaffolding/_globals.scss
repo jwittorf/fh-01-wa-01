@@ -22,7 +22,6 @@ a {
             @extend %fa-icon;
             @extend .fas;
             content: fa-content($fa-var-external-link-alt);
-            content: fa-content($fa-var-external-link-square-alt);
             margin-right: 10px;
         }
     }

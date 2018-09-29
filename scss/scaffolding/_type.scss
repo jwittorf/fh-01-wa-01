@@ -42,3 +42,59 @@ ul, ol, dl,
 table {
     margin: 1em 0 .5em;
 }
+
+abbr, acronym {
+    cursor: help;
+    &[title] {
+        text-decoration: none;
+        border-bottom: 1px dashed $brown;
+    }
+}
+
+tt, code, kbd, samp {
+    font-family: $font-family-monospace;
+    background: $brown;
+    color: $white;
+    border: 1px solid lighten($brown, 20%);
+    padding: 2px 5px;
+    font-size: $font-size-small;
+}
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+ul {
+    margin-left: 1.5em;
+    list-style: square;
+    ul {
+        list-style: circle;
+    }
+}
+
+ol {
+    list-style: decimal-leading-zero;
+    margin-left: 2.5em;
+    ol {
+        list-style: lower-alpha;
+        margin-left: 1.75em;
+    }
+}
+
+dl {
+    dt {
+        font-weight: bold;
+        border-bottom: 1px solid $brown;
+        &:after {
+            content: ":";
+        }
+    }
+    dd {
+        padding-left: 2em;
+        margin-bottom: .5em;
+    }
+}
