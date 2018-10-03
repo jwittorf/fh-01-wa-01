@@ -1,0 +1,7 @@
+.ad {
+    &:before {
+      content: "Anzeige";
+      font-size: 12px;
+      color: lighten($gray, 20%);
+  }
+}

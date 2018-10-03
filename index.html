@@ -29,15 +29,15 @@
                     <div class="grid-inner-r">
                         <div id="header-logo">
                             <a href="https://www.fh-kiel.de/" rel="external"><img src="img/logo-fh.gif" alt="FH Kiel"
-                                                                                   width="634" height="168"/></a>
+                                                                                  width="634" height="168"/></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div id="nav-main">
+    <div id="nav-main">
+        <div class="container">
             <ul>
                 <li><a href="#">HTML</a></li>
                 <li class="has-children"><a href="#">CSS</a>
@@ -62,9 +62,18 @@
                 </li>
             </ul>
         </div>
+    </div>
+    <div class="container">
         <div id="content" class="grid-wrapper">
             <div id="content-main" class="grid-75-l">
                 <div class="grid-inner-l">
+                    <h1>Inhaltsverzeichnis</h1>
+                    <ul>
+                        <li><a href="#grundlegendes">Grundlegendes zu HTML und CSS</a></li>
+                        <li><a href="#ueberschriften">Überschriften</a></li>
+                        <li><a href="#tabellen">Tabellen</a></li>
+                        <li><a href="#listen">Listen</a></li>
+                    </ul>
                     <h1>Grundlegendes zu HTML und CSS</h1>
                     <p><abbr title="Hypertext Markup Language">HTML</abbr> ist eine Auszeichnungssprache und
                         dient
@@ -203,7 +212,7 @@
                         und z. B. in eine eigene Datei schreibt, deren Inhalt ausgelesen und in den
                         <code>&lt;head&gt;</code>-Bereich geschrieben werden kann.
                     </p>
-                    <h2>Überschriften in HTML</h2>
+                    <h1 id="ueberschriften">Überschriften in HTML</h1>
                     <p>Überschriften werden in HTML über die Elemente <code>&lt;h1&gt;</code> bis
                         <code>&lt;h6&gt;</code>
                         dargestellt. Sie definieren die "Wichtigkeit" der Überschrift in absteigender
@@ -268,6 +277,7 @@
                         laudantium, maiores natus obcaecati quos, sunt unde.</p>
                     <h6>Überschrift 6. Ordnung</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iste.</p>
+                    <h1 id="tabellen">Tabellen</h1>
                     <table>
                         <thead>
                         <tr>
@@ -494,6 +504,7 @@
                         </tr>
                         </tbody>
                     </table>
+                    <h1 id="listen">Listen</h1>
                     <ul>
                         <li>Unordered Listitem</li>
                         <li>Unordered Listitem</li>
@@ -540,13 +551,22 @@
             </div>
             <div id="content-side" class="grid-25-r">
                 <div class="grid-inner-r">
-                    <ul>
-                        <li><a href="https://twitter.com/">Twitter</a></li>
-                        <li><a href="https://facebook.com/">Facebook</a></li>
-                        <li><a href="https://google.com/">Google</a></li>
-                        <li><a href="https://youtube.com/">Youtube</a></li>
-                        <li><a href="https://die-netzwerkstatt.de/">die NetzWerkstatt</a></li>
-                    </ul>
+                    <div class="h6">Hier befindet sich die Sidebar oder der "Nebeninhalt"</div>
+                    <p>
+                        Traditionell werden hier Anzeigen oder weitere "Nebeninformationen" angezeigt. Diese sind aber
+                        oft auch relevant, wir kombinieren hier beides und erfüllen damit auch den Aufgabenteil eine
+                        <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite ein. Die Anzeige hat es
+                        dafür aber in sich, wir verlinken auf den tollen, leichten, schnellen und mächtigen Text-Editor
+                        "Sublime Text". Sehensweit ist auch <a
+                            href="https://www.youtube.com/watch?v=SVkR1ZkNusI&list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
+                        Playlist auf Youtube</a> zur näheren Demonstration der
+                        Funktionen.
+                    </p>
+                    <div class="ad">
+                        <a href="https://www.sublimetext.com/" class="no-icon"
+                           title="'A sophisticated text editor for code, markup and prose'"><img
+                                src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"></a>
+                    </div>
                 </div>
             </div>
         </div>

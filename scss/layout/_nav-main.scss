@@ -1,6 +1,19 @@
 #nav-main {
+    padding: 0 20px;
+    background: $orange;
+    // Menü auf 100% setzen und floaten, sodass es komplett dargestellt wird,
+    // gibt ansonsten Probleme/Unstimmigkeiten mit der Größe des Elements und dem Hintergrund
     width: 100%;
-    padding: 10px 20px;
+    float: left;
+    // Auflösen des Floats, sodass der nachfolgende Inhalt korrekt dargestellt wird
+    // https://css-tricks.com/all-about-floats/#article-header-id-4
+    &:after {
+        content: ".";
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+    }
     ul {
         width: 100%;
         list-style: none;
@@ -13,23 +26,51 @@
             margin: 0;
             padding: 0;
             a {
-                padding: 5px 10px;
+                padding: 10px;
                 display: block;
+                text-decoration: none;
+                color: darken($brown, 10%);
+                &:hover {
+                    background: $pink;
+                    color: $gray;
+                }
+                &:focus,
+                &:active {
+                    background: $blue;
+                    color: $gray;
+                }
             }
+            // Im ersten Element den Abstand nach links verringern,
+            // sodass das Layout in einer Flucht läuft
             &:first-child {
                 a {
                     margin-left: -10px;
                 }
             }
-            // Second level
+            // Zweite Ebene
             &.has-children {
                 position: relative;
                 top: 0;
                 left: 0;
+                > a {
+                    // Icon für Pfeil nach unten von Fontawesome einsetzen,
+                    // signalisiert, dass dieser Menüpunkt weitere Unterpunkte hat.
+                    // https://fontawesome.com/how-to-use/on-the-web/using-with/sass#mixins
+                    &:after {
+                        @extend %fa-icon;
+                        @extend .fas;
+                        content: fa-content($fa-var-angle-down);
+                        margin-left: 5px;
+                    }
+                }
                 > ul {
+                    // Zweite Ebene standardmäßig deaktivieren,
+                    // wird per Hover auf der übergeordneten Ebene weiter unten eingeblendet.
                     display: none;
                     position: absolute;
-                    top: $font-size-base + 10px;
+                    // Schriftgrößer der ersten Ebene + 10px line-height + 2*10px Padding aus der ersten Ebene,
+                    // der Abstand wird benötigt, damit die zweite Ebene direkt unter dem Link der ersten Ebene anschließt.
+                    top: $font-size-base + 30px;
                     left: 0;
                     background: #fff;
                     width: 9em;
@@ -38,15 +79,18 @@
                         float: none;
                         a {
                             font-size: $font-size-small;
+                            // Zurücksetzen der Anpassung für die erste Ebene
                             &:first-child {
                                 margin-left: 0;
                             }
                         }
                     }
                 }
+                // Wenn die erste Ebene ausgewählt wird ...
                 &:focus,
                 &:hover,
                 &:active {
+                    // ... soll die direkt folgende Liste angezeigt werden.
                     > ul {
                         display: block;
                     }

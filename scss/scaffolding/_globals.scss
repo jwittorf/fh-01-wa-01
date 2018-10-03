@@ -25,6 +25,12 @@ a {
             margin-right: 10px;
         }
     }
+    &.no-icon {
+        &:before {
+            content: "";
+            margin-right: 0;
+        }
+    }
 }
 
 ::selection {
@@ -34,4 +40,8 @@ a {
 ::-moz-selection {
     background: rgba(red($selection-bg), green($selection-bg), blue($selection-bg), .99);
     color: $selection-color;
+}
+
+img {
+    max-width: 100%;
 }
