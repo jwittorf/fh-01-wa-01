@@ -285,7 +285,6 @@
                             <th>Syntax</th>
                             <th>Beschreibung</th>
                             <th>HTML-Beispiel</th>
-                            <th>Anwendungsbereich</th>
                         </tr>
                         </thead>
                         <tfoot>
@@ -294,7 +293,6 @@
                             <td>Tabellenfuß 2</td>
                             <td>Tabellenfuß 3</td>
                             <td>Tabellenfuß 4</td>
-                            <td>Tabellenfuß 5</td>
                         </tr>
                         </tfoot>
                         <tbody>
@@ -312,8 +310,6 @@
                             </td>
                             <td>  <code>&lt;<strong>h1</strong>&gt; Überschrift &lt;<strong>/h1</strong>&gt;</code>
                             </td>
-                            <td>hier darf Philipp sich noch Text ausdenken :(
-                            </td>
                         </tr>
                         <tr>
                             <td>Klassensektor
@@ -326,8 +322,6 @@
                                 &lt;p&gt; class="<strong>succsess</strong>"Anmeldung bestätigt&lt;/p&gt;
                                 &lt;div class="box <strong>success</strong>"&gt;
                                  </code>
-                            </td>
-                            <td>hier darf Philipp sich noch Text ausdenken :(
                             </td>
                         </tr>
                         <tr>
@@ -342,12 +336,12 @@
                                 &lt;table id= "bunteTabelle"&gt;
                                 </code>
                             </td>
-                            <td>hier darf Philipp sich noch Text ausdenken :(
-                            </td>
                             <tbody>
                                 <tr>
-                                   <td colspan="5">
-                                    Attributsselektoren
+                                   <td colspan="4">
+                                    <h4>Attributsselektoren</h4>
+                                       <p>Attributselektoren erlauben es, Elemente nur dann anzusprechen, wenn das Attribut
+                                           einen bestimmten Wert oder einen bestimmten Wertabschnitt besitzt</p>
                                        <table>
                                            <thead>
                                            <tr>
@@ -355,30 +349,56 @@
                                                <th>Syntax</th>
                                                <th>Beschreibung</th>
                                                <th>HTML-Beispiel</th>
-                                               <th>Anwendungsbereich</th>
                                            </tr>
                                            </thead>
                                            <tbody>
                                            <tr>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
+                                               <td>
+                                                   Attributpräsenz
+                                               </td>
+                                               <td>
+                                                   <code><strong>[href]</strong></code>
+                                               </td>
+                                               <td>
+                                                   Ein Element mit einem bestimmten Attribut wird durch die Attributsselektor
+                                                   angesprochen in diesem Fall <code><strong>[...]</strong></code>
+                                               </td>
+                                               <td>
+                                                   <code>&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
+                                               </td>
                                            </tr>
                                            <tr>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
+                                               <td>
+                                                   Attributwert
+                                               </td>
+                                               <td>
+                                                    <code><strong>[attributname=attributwert]</strong></code>
+                                               </td>
+                                               <td>
+                                                    Ein Attribut wird nur angesprochen wenn es einen bestimmten Wert besitzt
+                                               </td>
+                                               <td>
+                                                   <code><strong>[hreflang=de]</strong></code>
+                                               </td>
                                            </tr>
                                            <tr>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
-                                               <td></td>
+                                               <td>
+                                                   Teilübereinstimmung
+                                               </td>
+                                               <td>
+                                                   <code><strong>[attributname^=zeichenkette]</strong></code>
+                                                   <code><strong>[attributname$=zeichenkette]</strong></code>
+                                                   <code><strong>[attributname*=zeichenkette]</strong></code>
+                                               </td>
+                                               <td>
+                                                   Es können Elemente angesprochen werde die, mit einer bestimmten Zeichenkette beginnen,
+                                                   mit einer bestimmten Zeichenkette enden oder eine bestimmte Zeichenkette enthalten
+                                               </td>
+                                               <td>
+                                                   <code><strong>a[href^="http://"]</strong></code>
+                                                   <code><strong>a[href$="http://"]</strong></code>
+                                                   <code><strong>a[href*="http://"]</strong></code>
+                                               </td>
                                            </tr>
                                            </tbody>
                                        </table>
