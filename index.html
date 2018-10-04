@@ -72,6 +72,7 @@
                         <li><a href="#ueberschriften">Überschriften</a></li>
                         <li><a href="#textauszeichnung">Textauszeichnung</a></li>
                         <li><a href="#tabellen">Tabellen</a></li>
+                        <li><a href="#bilder">Bilder</a></li>
                         <li><a href="#listen">Listen</a></li>
                     </ul>
                     <h1>Grundlegendes zu HTML und CSS</h1>
@@ -390,9 +391,12 @@
                                             enthalten.
                                         </td>
                                         <td>
-                                            <code class="code-block">&lt;a href="<strong>http://</strong>aol.com"&gt;</code>
-                                            <code class="code-block">&lt;a href="http://db<strong>.de</strong>"&gt;</code>
-                                            <code class="code-block">&lt;a href="http://<strong>wiki</strong>.org"&gt;</code>
+                                            <code class="code-block">&lt;a
+                                                href="<strong>http://</strong>aol.com"&gt;</code>
+                                            <code class="code-block">&lt;a
+                                                href="http://db<strong>.de</strong>"&gt;</code>
+                                            <code class="code-block">&lt;a
+                                                href="http://<strong>wiki</strong>.org"&gt;</code>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -403,10 +407,13 @@
                     </table>
 
                     <h1 id="bilder">Bilder</h1>
+                    <!-- Bekommt position: relative -->
                     <div class="img-position-wrapper">
-                        <img src="img/500x500.png" alt="Bild mit Größe 500x500" class="img-position-01" width="500" height="500"/>
-                        <img src="img/500x250.png" alt="Bild mit Größe 500x250" class="img-position-02" width="500" height="250"/>
-
+                        <!-- Bleibt einfach wo es ist, der nachfolgende Text wird einfach nach dem "normalen" Bild angezeigt. -->
+                        <img src="img/500x500.png" alt="Bild mit Größe 500x500" width="500" height="500"/>
+                        <!-- Bekommt über die Klasse img-position-absolute ein position: absolute und wird aus dem Textfluss gerissen,
+                            der nachfolgende Inhalt weiß nichts von diesem Bild. -->
+                        <img src="img/Peter-Griffin-CSS.gif" alt="CSS in a nutshell" class="img-position-absolute"/>
                     </div>
 
                     <h1 id="listen">Listen</h1>

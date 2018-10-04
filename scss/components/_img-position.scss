@@ -1,20 +1,12 @@
-.img-position-wrapper
-{
+.img-position-wrapper {
   position: relative;
   top: 0;
   left: 0;
 }
-.img-position-01
-{
-  position: relative;
-  top: 10px;
-  left: 500px;
-  z-index: 1;
-}
-.img-position-02
-{
-  position: relative;
-  top: -100px;
-  left: 350px;
+
+.img-position-absolute {
+  position: absolute;
+  top: 100px;
+  left: 250px;
   z-index: 1;
 }
