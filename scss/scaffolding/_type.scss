@@ -62,7 +62,9 @@ tt, code, kbd, samp {
 
 code {
     &.code-block {
-        white-space: pre-wrap;
+        white-space: pre-line;
+        display: block;
+        margin-bottom: 5px;
     }
 }
 
@@ -103,4 +105,8 @@ dl {
         padding-left: 2em;
         margin-bottom: .5em;
     }
+}
+
+blockquote {
+    font-style: italic;
 }
