@@ -7,8 +7,7 @@
     <title>Aufgabenteil 1: Grundlagen der Entwicklung von XHTML-Dokumenten</title>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <meta name="author" content="Philipp Beeck, Julian Wittorf"/>
-    <!-- Include the main stylesheet -->
-    <!-- Since we are using the old school XHTML, we will NOT implement responsive features -->
+    <!-- Da wir "veraltetes" XHTML verwenden, wird auf eine Optimierung für mobile Endgeräte verzichtet. -->
     <link rel="stylesheet" href="css/main.css" media="all"/>
     <link rel="stylesheet" href="css/print.css" media="print"/>
 </head>
@@ -28,7 +27,7 @@
                 <div class="grid-25-r">
                     <div class="grid-inner-r">
                         <div id="header-logo">
-                            <a href="https://www.fh-kiel.de/" rel="external"><img src="img/logo-fh.gif" alt="FH Kiel"
+                            <a rel="external" href="https://www.fh-kiel.de/"><img src="img/logo-fh.gif" alt="FH Kiel"
                                                                                   width="634" height="168"/></a>
                         </div>
                     </div>
@@ -42,22 +41,22 @@
                 <li><a href="#">HTML</a></li>
                 <li class="has-children"><a href="#">CSS</a>
                     <ul>
-                        <li><a href="https://getbootstrap.com/">Twitter Bootstrap</a></li>
-                        <li><a href="https://sass-lang.com/">SASS</a></li>
+                        <li><a rel="external" href="https://getbootstrap.com/">Twitter Bootstrap</a></li>
+                        <li><a rel="external" href="https://sass-lang.com/">SASS</a></li>
                     </ul>
                 </li>
                 <li class="has-children"><a href="#">JavaScript</a>
                     <ul>
-                        <li><a href="https://jquery.com/">jQuery</a></li>
-                        <li><a href="https://gulpjs.com/">Gulp</a></li>
+                        <li><a rel="external" href="https://jquery.com/">jQuery</a></li>
+                        <li><a rel="external" href="https://gulpjs.com/">Gulp</a></li>
                     </ul>
                 </li>
                 <li><a href="#">PHP</a></li>
                 <li class="has-children"><a href="#">CMS</a>
                     <ul>
-                        <li><a href="https://typo3.org/">TYPO3</a></li>
-                        <li><a href="https://wordpress.org/">WordPress</a></li>
-                        <li><a href="https://magento.com/">Magento</a></li>
+                        <li><a rel="external" href="https://typo3.org/">TYPO3</a></li>
+                        <li><a rel="external" href="https://wordpress.org/">WordPress</a></li>
+                        <li><a rel="external" href="https://magento.com/">Magento</a></li>
                     </ul>
                 </li>
             </ul>
@@ -101,8 +100,8 @@
                             title="Document Type Declaration">DTD</abbr> hinterlegt werden. Der Autor gibt damit
                         an,
                         welchen
-                        Regeln er in seinem Dokument folgt. Mittels eines <a href="https://validator.w3c.org/"
-                                                                             rel="external">Validierungsdienstes</a>
+                        Regeln er in seinem Dokument folgt. Mittels eines <a rel="external"
+                                                                             href="https://validator.w3c.org/">Validierungsdienstes</a>
                         kann
                         überprüft werden, ob die Regeln eingehalten werden. Bei einer Nichteinhaltung kann es zu
                         Problemen
@@ -147,8 +146,7 @@
                     <p class="text-dimmed">
                         In der modernen Webentwicklung werden zunehmend <abbr
                             title="Cascading Stylesheets">CSS</abbr>-Preprozessoren
-                        wie <a
-                            href="https://sass-lang.com" rel="external"><abbr
+                        wie <a rel="external" href="https://sass-lang.com"><abbr
                             title="Syntactically Awesome Style Sheets">SASS</abbr>/SCSS</a> oder LESS
                         eingesetzt,
                         die das
@@ -242,14 +240,9 @@
                         wieder auf den Kontext und die korrekte und semantisch richtige Anwendung an, weitere
                         Informationen
                         sind
-                        <!-- TODO: Ein JavaScript schreiben, um alle Links mit rel="external" in einem neuen Fenster zu öffnen
-                            Ansatz unter https://csscreator.com/node/28915 mit:
-                                window.onload = function() {
-                                    el = document.anchors;
-                                    for (var i=0; iDepends on the links including rel="ext" ...
-                        -->
-                        <a href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824"
-                           rel="external">diesem Blog-Artikel zu entnehmen</a>.</p>
+                        <a rel="external"
+                           href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">diesem
+                            Blog-Artikel zu entnehmen</a>.</p>
                     <h2>Eine Überschrift 2. Ordnung mit nachfolgenden Textauszeichnungen</h2>
                     <p>In einem Fließtext können bestimmte Bereiche entweder über <strong>stark betont
                         werden</strong>
@@ -302,13 +295,13 @@
                             <td>
                                 <code>
                                     <strong>element</strong> {
-                                        color: blue;
+                                    color: blue;
                                     }
                                 </code>
                             </td>
                             <td>Sehr allgemeiner Sektor zur globalen Beschreibung von HTML-Elementen
                             </td>
-                            <td>  <code>&lt;<strong>h1</strong>&gt; Überschrift &lt;<strong>/h1</strong>&gt;</code>
+                            <td><code>&lt;<strong>h1</strong>&gt; Überschrift &lt;<strong>/h1</strong>&gt;</code>
                             </td>
                         </tr>
                         <tr>
@@ -321,7 +314,7 @@
                             <td><code>
                                 &lt;p&gt; class="<strong>succsess</strong>"Anmeldung bestätigt&lt;/p&gt;
                                 &lt;div class="box <strong>success</strong>"&gt;
-                                 </code>
+                            </code>
                             </td>
                         </tr>
                         <tr>
@@ -333,7 +326,7 @@
                             </td>
                             <td>
                                 <code>
-                                &lt;table id= "bunteTabelle"&gt;
+                                    &lt;table id= "bunteTabelle"&gt;
                                 </code>
                             </td>
                             <tbody>
@@ -407,6 +400,8 @@
                             </tbody>
                         </tr>
                         </tbody>
+                        </tr>
+                        </tbody>
                     </table>
                     <h1 id="listen">Listen</h1>
                     <ul>
@@ -461,13 +456,13 @@
                         oft auch relevant, wir kombinieren hier beides und erfüllen damit auch den Aufgabenteil eine
                         <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite ein. Die Anzeige hat es
                         dafür aber in sich, wir verlinken auf den tollen, leichten, schnellen und mächtigen Text-Editor
-                        "Sublime Text". Sehensweit ist auch <a
-                            href="https://www.youtube.com/watch?v=SVkR1ZkNusI&list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
+                        "Sublime Text". Sehensweit ist auch <a rel="external"
+                                                               href="https://www.youtube.com/watch?v=SVkR1ZkNusI&list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
                         Playlist auf Youtube</a> zur näheren Demonstration der
                         Funktionen.
                     </p>
                     <div class="ad">
-                        <a href="https://www.sublimetext.com/" class="no-icon"
+                        <a rel="external" href="https://www.sublimetext.com/" class="no-icon"
                            title="'A sophisticated text editor for code, markup and prose'"><img
                                 src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"></a>
                     </div>
@@ -483,5 +478,32 @@
         </div>
     </div>
 </div>
+<!-- JavaScript am Ende der Seite laden, um ein Blockieren der Seite beim Ladevorgang zu unterbinden und so die Ladegeschwindigkeite zu erhöhen -->
+<!-- https://www.guido-muehlwitz.de/2011/01/wieso-man-javascript-nicht-im-head-laedt-und-im-footer-besser-auch-nicht/ -->
+<script type="text/javascript">
+    //<![CDATA[
+    // Ganz sicher gehen, dass auch alles geladen wurde
+    window.onload = function () {
+        // Externe Links mit dem Attribut rel="external" in neuen Fenster öffnen, um das Benutzererlebnis zu verbessern
+        if (!document.getElementsByTagName) return; // Prüfung, ob der Browser die verwendete Methode unterstützt
+        var anchorElements = document.getElementsByTagName("a");
+        for (var i = 0; i < anchorElements.length; i++) {
+            const anchor = anchorElements[i];
+            const href = anchor.getAttribute("href");
+            const rel = anchor.getAttribute("rel");
+            if (href && rel === "external") {
+                // Bei einem Klick auf das Element die angegebene Funktion ausführen
+                anchor.addEventListener("click", function () {
+                    // Standardaktionen unterbinden (unterscheiden sich teilweise je Browser)
+                    event.preventDefault();
+                    event.stopPropagation();
+                    // Link öffnen
+                    window.open(href);
+                });
+            }
+        }
+    };
+    //]]>
+</script>
 </body>
 </html>
