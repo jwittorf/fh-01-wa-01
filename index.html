@@ -280,126 +280,130 @@
                             <th>HTML-Beispiel</th>
                         </tr>
                         </thead>
-                        <tfoot>
+                        <!-- In diesem Fall gibt es keine wirklich relevante Fußzeile. Sie steht im Quelltext zwar oben,
+                            wird jedoch im Browser am Ende der Tabelle angezeigt.
+                        -->
+                        <!--<tfoot>
                         <tr>
                             <td>Tabellenfuß 1</td>
                             <td>Tabellenfuß 2</td>
                             <td>Tabellenfuß 3</td>
                             <td>Tabellenfuß 4</td>
                         </tr>
-                        </tfoot>
+                        </tfoot>-->
                         <tbody>
                         <tr>
                             <td>Typsektor
                             </td>
                             <td>
-                                <code>
-                                    <strong>element</strong> {
+                                <code class="code-block"><strong>element</strong> {
                                     color: blue;
-                                    }
-                                </code>
+                                    }</code>
                             </td>
                             <td>Sehr allgemeiner Sektor zur globalen Beschreibung von HTML-Elementen
                             </td>
-                            <td><code>&lt;<strong>h1</strong>&gt; Überschrift &lt;<strong>/h1</strong>&gt;</code>
+                            <td><code class="code-block">&lt;<strong>h1</strong>&gt;Überschrift&lt;<strong>/h1</strong>&gt;</code>
                             </td>
                         </tr>
                         <tr>
                             <td>Klassensektor
                             </td>
-                            <td><strong>class-name</strong>{background: padding: 10px}
+                            <td>
+                                <code class="code-block">.<strong>class-name</strong> {
+                                    background: green;
+                                    padding: 10px;
+                                    }</code>
                             </td>
-                            <td>Allgemeiner Sektor zur Beschreibung wiederkehrender Elemente beliebigen Typs
+                            <td>Allgemeiner Sektor zur Beschreibung wiederkehrender Elemente
                             </td>
-                            <td><code>
-                                &lt;p&gt; class="<strong>succsess</strong>"Anmeldung bestätigt&lt;/p&gt;
-                                &lt;div class="box <strong>success</strong>"&gt;
-                            </code>
+                            <td>
+                                <code class="code-block">&lt;p class="<strong>success</strong>"&gt;Anmeldung bestätigt&lt;/p&gt;</code>
                             </td>
                         </tr>
                         <tr>
-                            <td>ID-Selektoren
-                            </td>
-                            <td><strong><code>#id {background: red;}</code></strong>
-                            </td>
-                            <td>Weißt einem Typ eine ID zu
+                            <td>ID-Selektor
                             </td>
                             <td>
-                                <code>
-                                    &lt;table id= "bunteTabelle"&gt;
-                                </code>
+                                <code class="code-block">#<strong>id-name</strong> {
+                                    background: red;
+                                    }</code>
                             </td>
-                            <tbody>
-                                <tr>
-                                   <td colspan="4">
-                                    <h4>Attributsselektoren</h4>
-                                       <p>Attributselektoren erlauben es, Elemente nur dann anzusprechen, wenn das Attribut
-                                           einen bestimmten Wert oder einen bestimmten Wertabschnitt besitzt</p>
-                                       <table>
-                                           <thead>
-                                           <tr>
-                                               <th>Name</th>
-                                               <th>Syntax</th>
-                                               <th>Beschreibung</th>
-                                               <th>HTML-Beispiel</th>
-                                           </tr>
-                                           </thead>
-                                           <tbody>
-                                           <tr>
-                                               <td>
-                                                   Attributpräsenz
-                                               </td>
-                                               <td>
-                                                   <code><strong>[href]</strong></code>
-                                               </td>
-                                               <td>
-                                                   Ein Element mit einem bestimmten Attribut wird durch die Attributsselektor
-                                                   angesprochen in diesem Fall <code><strong>[...]</strong></code>
-                                               </td>
-                                               <td>
-                                                   <code>&lt;a href="https://www.w3schools.com"&gt;This is a link&lt;/a&gt;</code>
-                                               </td>
-                                           </tr>
-                                           <tr>
-                                               <td>
-                                                   Attributwert
-                                               </td>
-                                               <td>
-                                                    <code><strong>[attributname=attributwert]</strong></code>
-                                               </td>
-                                               <td>
-                                                    Ein Attribut wird nur angesprochen wenn es einen bestimmten Wert besitzt
-                                               </td>
-                                               <td>
-                                                   <code><strong>[hreflang=de]</strong></code>
-                                               </td>
-                                           </tr>
-                                           <tr>
-                                               <td>
-                                                   Teilübereinstimmung
-                                               </td>
-                                               <td>
-                                                   <code><strong>[attributname^=zeichenkette]</strong></code>
-                                                   <code><strong>[attributname$=zeichenkette]</strong></code>
-                                                   <code><strong>[attributname*=zeichenkette]</strong></code>
-                                               </td>
-                                               <td>
-                                                   Es können Elemente angesprochen werde die, mit einer bestimmten Zeichenkette beginnen,
-                                                   mit einer bestimmten Zeichenkette enden oder eine bestimmte Zeichenkette enthalten
-                                               </td>
-                                               <td>
-                                                   <code><strong>a[href^="http://"]</strong></code>
-                                                   <code><strong>a[href$="http://"]</strong></code>
-                                                   <code><strong>a[href*="http://"]</strong></code>
-                                               </td>
-                                           </tr>
-                                           </tbody>
-                                       </table>
-                                  </td>
-                                 </tr>
-                            </tbody>
+                            <td>Spezifischer Selektor zur Beschreibung einmaliger Elemente
+                            </td>
+                            <td>
+                                <code class="code-block">&lt;div id="id-name"&gt;&lt;/div&gt;</code>
+                            </td>
                         </tr>
-                        </tbody>
+                        <tr>
+                            <td colspan="4">
+                                <h4>Attributsselektoren</h4>
+                                <p>Attributselektoren erlauben es, Elemente nur bei einer bestimmten Attributkombination
+                                    dann anzusprechen.</p>
+                                <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Syntax</th>
+                                        <th>Beschreibung</th>
+                                        <th>HTML-Beispiel</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Attributpräsenz
+                                        </td>
+                                        <td>
+                                            <code class="code-block">[<strong>attribut</strong>]</code>
+                                        </td>
+                                        <td>
+                                            Ein Element wird nur angesprochen, wenn das angegebene Attribut vorhanden
+                                            ist.
+                                        </td>
+                                        <td>
+                                            <code class="code-block">&lt;button disabled&gt;Deaktivierte Schaltfläche&lt;/button&gt;</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Attributwert
+                                        </td>
+                                        <td>
+                                            <code class="code-block">[attribut<strong>=</strong>"wert"]</code>
+                                        </td>
+                                        <td>
+                                            Ein Element wird nur angesprochen, wenn es ein Attribut mit einen bestimmten
+                                            Wert besitzt.
+                                        </td>
+                                        <td>
+                                            <code class="code-block">&lt;a <strong>rel="external"</strong>&gt;Externer
+                                                Link&lt;/a&gt;</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Teilübereinstimmung
+                                        </td>
+                                        <td>
+                                            <code class="code-block">[attribut<strong>^=</strong>"wert"]</code>
+                                            <code class="code-block">[attribut<strong>$=</strong>"wert"]</code>
+                                            <code class="code-block">[attribut<strong>*=</strong>"wert"]</code>
+                                        </td>
+                                        <td>
+                                            Es können Elemente angesprochen werde die, mit einer bestimmten Zeichenkette
+                                            beginnen,
+                                            mit einer bestimmten Zeichenkette enden oder eine bestimmte Zeichenkette
+                                            enthalten.
+                                        </td>
+                                        <td>
+                                            <code class="code-block">&lt;a href="<strong>http://</strong>aol.com"&gt;</code>
+                                            <code class="code-block">&lt;a href="http://db<strong>.de</strong>"&gt;</code>
+                                            <code class="code-block">&lt;a href="http://<strong>wiki</strong>.org"&gt;</code>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
                         </tr>
                         </tbody>
                     </table>

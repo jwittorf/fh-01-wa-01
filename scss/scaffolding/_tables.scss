@@ -1,24 +1,29 @@
-table
-{
-  background:red;
-
+table {
+  background: darken($gray, 10%);
   border-collapse: collapse;
   width: 100%;
+  font-size: $font-size-small;
 
-  td,th {
-    border: 1px solid #ddd;
+  td, th {
+    border: 1px solid $white;
     padding: 8px;
   }
 
-  tr:nth-child(even){background-color: darkorange;}
-
- // tr:hover {background-color: red;}
-
   th {
-    padding-top: 8px;
-    padding-bottom: 8px;
     text-align: left;
-    background-color: #AE81FF;
-    color: lightgreen;
+    background: $headings-color-alternate;
+    color: $gray;
+  }
+
+  tr {
+    &:nth-child(even) {
+      background: darken($gray, 15%);
+    }
+  }
+
+  table {
+    th {
+      background: $headings-color-default;
+    }
   }
 }
