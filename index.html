@@ -70,6 +70,7 @@
                     <ul>
                         <li><a href="#grundlegendes">Grundlegendes zu HTML und CSS</a></li>
                         <li><a href="#ueberschriften">Überschriften</a></li>
+                        <li><a href="#textauszeichnung">Textauszeichnung</a></li>
                         <li><a href="#tabellen">Tabellen</a></li>
                         <li><a href="#listen">Listen</a></li>
                     </ul>
@@ -109,6 +110,7 @@
                         korrekt
                         darstellt oder andere externe Programme die Datei nicht akzeptieren.
                     </p>
+                    <h2>Trennung von Inhalt und Gestaltung</h2>
                     <p>
                         Idealerweise erfolgt zur besseren Wartbarkeit und Performance einer Webseite bzw.
                         Website
@@ -143,6 +145,7 @@
                         über
                         sehr
                         mächtige Werkzeuge wie Operatoren oder Grafik- und Animationsanweisungen.</p>
+                    <h3>Erweiterte CSS-Entwicklung</h3>
                     <p class="text-dimmed">
                         In der modernen Webentwicklung werden zunehmend <abbr
                             title="Cascading Stylesheets">CSS</abbr>-Preprozessoren
@@ -172,7 +175,9 @@
                         die
                         Besucher
                         der Seite. Die Auswirkungen sind sogar positiv, da z. B. bei der Nutzung von <abbr
-                            title="Cascading Stylesheets">CSS</abbr>-Frameworks wie "Twitter Bootstrap" die
+                            title="Cascading Stylesheets">CSS</abbr>-Frameworks wie "<a rel="external"
+                                                                                        href="https://getbootstrap.com/">Twitter
+                        Bootstrap</a>" die
                         einzelnen
                         Komponenten direkt an die Bedürfnisse des Autors angepasst und so eine eigene,
                         individuelle
@@ -186,6 +191,7 @@
                         Entwickler
                         Funktionen des Frameworks nutzen und erweitern.
                     </p>
+                    <h4>Weitere Optimierung</h4>
                     <p class="text-dimmed">
                         In speziellen Fällen wird ein Teil des <abbr title="Cascading Stylesheets">CSS</abbr>-Codes
                         in
@@ -199,9 +205,11 @@
                         Elemente
                         benötigt werden, die beim Laden der Seite im sichtbaren Bereich erscheinen (auch bekannt
                         als
-                        Viewport). Zur Generierung einer solchen Datei kann z. B. das Node.js-Plugin "Penthouse"
+                        Viewport). Zur Generierung einer solchen Datei kann z. B. das Node.js-Plugin "<a rel="external"
+                                                                                                         href="https://github.com/pocketjoso/penthouse">Penthouse</a>"
                         verwendet
-                        werden, welches unter Nutzung des "Phantom"-Browsers und entsprechender Konfiguration
+                        werden, welches unter Nutzung des "<a rel="external" href="http://phantomjs.org/">Phantom</a>"-Browsers
+                        und entsprechender Konfiguration
                         der
                         Viewports,
                         die benötigten <abbr title="Cascading Stylesheets">CSS</abbr>-Anweisungen aus einer
@@ -210,8 +218,9 @@
                         und z. B. in eine eigene Datei schreibt, deren Inhalt ausgelesen und in den
                         <code>&lt;head&gt;</code>-Bereich geschrieben werden kann.
                     </p>
-                    <h1 id="ueberschriften">Überschriften in HTML</h1>
-                    <p>Überschriften werden in HTML über die Elemente <code>&lt;h1&gt;</code> bis
+                    <h1 id="ueberschriften">Überschriften in <abbr title="Hypertext Markup Language">HTML</abbr></h1>
+                    <p>Überschriften werden in <abbr title="Hypertext Markup Language">HTML</abbr> über die Elemente
+                        <code>&lt;h1&gt;</code> bis
                         <code>&lt;h6&gt;</code>
                         dargestellt. Sie definieren die "Wichtigkeit" der Überschrift in absteigender
                         Reihenfolge
@@ -243,33 +252,18 @@
                         <a rel="external"
                            href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">diesem
                             Blog-Artikel zu entnehmen</a>.</p>
-                    <h2>Eine Überschrift 2. Ordnung mit nachfolgenden Textauszeichnungen</h2>
+                    <h2 id="textauszeichnung">Eine Überschrift 2. Ordnung mit nachfolgenden Textauszeichnungen und
+                        weiteren
+                        Überschriftentypen</h2>
                     <p>In einem Fließtext können bestimmte Bereiche entweder über <strong>stark betont
                         werden</strong>
-                        oder
+                        oder <em>hervorgehoben</em> werden. Dies erfolt über die Tags <code>&lt;strong&gt;</code> und
+                        <code>&lt;em&gt;</code>
                     </p>
                     <h3>Überschrift 3. Ordnung</h3>
-                    <p>Lorem ipsum dolor sit amet, <em>consectetur adipisicing </em>elit. A accusantium aliquam
-                        asperiores
-                        doloremque
-                        exercitationem explicabo ipsam magnam nemo vel, vitae! Amet deserunt eaque illum neque
-                        officia
-                        pariatur perferendis quia repellendus rerum sequi. Ad, cupiditate distinctio doloremque
-                        enim
-                        est
-                        incidunt ipsa ipsam ipsum magnam, natus placeat porro praesentium quaerat sed unde!</p>
                     <h4>Überschrift 4. Ordnung</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est itaque magni maiores neque
-                        ullam.
-                        Consectetur facilis ipsa labore perferendis quam.</p>
                     <h5>Überschrift 5. Ordnung</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid aspernatur
-                        blanditiis
-                        cumque debitis deleniti dolore doloremque eius enim exercitationem expedita facilis
-                        inventore
-                        laudantium, maiores natus obcaecati quos, sunt unde.</p>
                     <h6>Überschrift 6. Ordnung</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, iste.</p>
                     <h1 id="tabellen">Tabellen</h1>
                     <table>
                         <thead>
@@ -487,17 +481,18 @@
                     <p>
                         Traditionell werden hier Anzeigen oder weitere "Nebeninformationen" angezeigt. Diese sind aber
                         oft auch relevant, wir kombinieren hier beides und erfüllen damit auch den Aufgabenteil eine
-                        <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite ein. Die Anzeige hat es
+                        <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite einzubinden. Die Anzeige
+                        hat es
                         dafür aber in sich, wir verlinken auf den tollen, leichten, schnellen und mächtigen Text-Editor
                         "Sublime Text". Sehensweit ist auch <a rel="external"
-                                                               href="https://www.youtube.com/watch?v=SVkR1ZkNusI&list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
+                                                               href="https://www.youtube.com/watch?v=SVkR1ZkNusI&amp;list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
                         Playlist auf Youtube</a> zur näheren Demonstration der
                         Funktionen.
                     </p>
                     <div class="ad">
                         <a rel="external" href="https://www.sublimetext.com/" class="no-icon"
                            title="'A sophisticated text editor for code, markup and prose'"><img
-                                src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"></a>
+                                src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"/></a>
                     </div>
                 </div>
             </div>
