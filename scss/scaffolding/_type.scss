@@ -60,6 +60,12 @@ tt, code, kbd, samp {
     font-size: $font-size-small;
 }
 
+code {
+    &.code-block {
+        white-space: pre-wrap;
+    }
+}
+
 strong, b {
     font-weight: bold;
 }
