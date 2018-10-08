@@ -12,8 +12,11 @@
     <link rel="stylesheet" href="css/print.css" media="print"/>
 </head>
 <body>
+<!-- Start umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
 <div id="wrapper">
+    <!-- Start #header mit Titel und Logo -->
     <div id="header">
+        <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
             <div class="grid-wrapper">
                 <div class="grid-75-l">
@@ -34,8 +37,12 @@
                 </div>
             </div>
         </div>
+        <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     </div>
+    <!-- Ende #header -->
+    <!-- Start #nav-main Hauptnavigation -->
     <div id="nav-main">
+        <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
             <ul>
                 <li><a href="#">HTML</a></li>
@@ -61,9 +68,13 @@
                 </li>
             </ul>
         </div>
+        <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     </div>
+    <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     <div class="container">
+        <!-- Start allgemeiner Inhalt #content mit umschließendem .grid-wrapper für die Aufteilung der Inhaltsbereiche -->
         <div id="content" class="grid-wrapper">
+            <!-- Start Hauptinhalt #content-main mit Aufteilung in 75% links der Inhaltsbereiche -->
             <div id="content-main" class="grid-75-l">
                 <div class="grid-inner-l">
                     <h1>Inhaltsverzeichnis</h1>
@@ -482,6 +493,8 @@
                     </dl>
                 </div>
             </div>
+            <!-- Ende Hauptinhalt #content-main mit Aufteilung in 75% links der Inhaltsbereiche -->
+            <!-- Start Nebeninhalt #content-side mit Aufteilung in 25% rechts der Inhaltsbereiche -->
             <div id="content-side" class="grid-25-r">
                 <div class="grid-inner-r">
                     <div class="h6">Hier befindet sich die Sidebar oder der "Nebeninhalt"</div>
@@ -503,23 +516,31 @@
                     </div>
                 </div>
             </div>
+            <!-- Ende Nebeninhalt #content-side mit Aufteilung in 25% rechts der Inhaltsbereiche -->
         </div>
+        <!-- Ende allgemeiner Inhalt #content mit umschließendem .grid-wrapper für die Aufteilung der Inhaltsbereiche -->
     </div>
+    <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
+    <!-- Start Fußzeile mit Urherberinformationen -->
     <div id="footer">
+        <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
             Konzeption, Gestaltung, Umsetzung und Verantwortung:<br/><a
                 href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
             Beeck</a> | <a href="mailto:julian.wittorf@student.fh-kiel.de">Julian Wittorf</a>
         </div>
+        <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     </div>
+    <!-- Ende Fußzeile mit Urherberinformationen -->
 </div>
+<!-- Ende umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
 <!-- JavaScript am Ende der Seite laden, um ein Blockieren der Seite beim Ladevorgang zu unterbinden und so die Ladegeschwindigkeite zu erhöhen -->
 <!-- https://www.guido-muehlwitz.de/2011/01/wieso-man-javascript-nicht-im-head-laedt-und-im-footer-besser-auch-nicht/ -->
 <script type="text/javascript">
     //<![CDATA[
     // Ganz sicher gehen, dass auch alles geladen wurde
     window.onload = function () {
-        // Externe Links mit dem Attribut rel="external" in neuen Fenster öffnen, um das Benutzererlebnis zu verbessern
+        // Zusammenfassung: Externe Links mit dem Attribut rel="external" in neuen Fenster öffnen, um das Benutzererlebnis zu verbessern
         if (!document.getElementsByTagName) return; // Prüfung, ob der Browser die verwendete Methode unterstützt
         var anchorElements = document.getElementsByTagName("a");
         for (var i = 0; i < anchorElements.length; i++) {
