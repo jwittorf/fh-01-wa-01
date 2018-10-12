@@ -1,17 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html
-        PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<!doctype html>
+<html lang="de">
 <head>
-    <title>Aufgabenteil 1: Grundlagen der Entwicklung von XHTML-Dokumenten</title>
-    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
-    <meta name="author" content="Philipp Beeck, Julian Wittorf"/>
+    <title>Aufgabenteil 2: Entwicklung von HTML5-Dokumenten, Formularen und Serveranfragen</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Philipp Beeck, Julian Wittorf">
     <!-- Icon in der Adresszeile des Brpwsers -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
-    <!-- Da wir "veraltetes" XHTML verwenden, wird auf eine Optimierung für mobile Endgeräte verzichtet. -->
-    <link rel="stylesheet" href="css/main.css" media="all"/>
-    <link rel="stylesheet" href="css/print.css" media="print"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
 </head>
 <body>
 <!-- Start umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
@@ -24,16 +20,16 @@
                 <div class="grid-75-l">
                     <div class="grid-inner-l">
                         <div id="header-title">
-                            <div class="h3">&lt;Aufgabenteil Nummer="1"/&gt;</div>
-                            <div class="h4">{Grundlagen der Entwicklung von XHTML-Dokumenten}</div>
+                            <div class="h3">&lt;Aufgabenteil Nummer="2"/&gt;</div>
+                            <div class="h4">{Entwicklung von HTML5-Dokumenten, Formularen und Serveranfragen}</div>
                         </div>
                     </div>
                 </div>
                 <div class="grid-25-r">
                     <div class="grid-inner-r">
                         <div id="header-logo">
-                            <a rel="external" href="https://www.fh-kiel.de/"><img src="img/logo-fh.gif" alt="FH Kiel"
-                                                                                  width="634" height="168"/></a>
+                            <a target="_blank" href="https://www.fh-kiel.de/"><img src="img/logo-fh.gif" alt="FH Kiel"
+                                                                                  width="634" height="168"></a>
                         </div>
                     </div>
                 </div>
@@ -50,22 +46,22 @@
                 <li><a href="#">HTML</a></li>
                 <li class="has-children"><a href="#">CSS</a>
                     <ul>
-                        <li><a rel="external" href="https://getbootstrap.com/">Twitter Bootstrap</a></li>
-                        <li><a rel="external" href="https://sass-lang.com/">SASS</a></li>
+                        <li><a target="_blank" href="https://getbootstrap.com/">Twitter Bootstrap</a></li>
+                        <li><a target="_blank" href="https://sass-lang.com/">SASS</a></li>
                     </ul>
                 </li>
                 <li class="has-children"><a href="#">JavaScript</a>
                     <ul>
-                        <li><a rel="external" href="https://jquery.com/">jQuery</a></li>
-                        <li><a rel="external" href="https://gulpjs.com/">Gulp</a></li>
+                        <li><a target="_blank" href="https://jquery.com/">jQuery</a></li>
+                        <li><a target="_blank" href="https://gulpjs.com/">Gulp</a></li>
                     </ul>
                 </li>
                 <li><a href="#">PHP</a></li>
                 <li class="has-children"><a href="#">CMS</a>
                     <ul>
-                        <li><a rel="external" href="https://typo3.org/">TYPO3</a></li>
-                        <li><a rel="external" href="https://wordpress.org/">WordPress</a></li>
-                        <li><a rel="external" href="https://magento.com/">Magento</a></li>
+                        <li><a target="_blank" href="https://typo3.org/">TYPO3</a></li>
+                        <li><a target="_blank" href="https://wordpress.org/">WordPress</a></li>
+                        <li><a target="_blank" href="https://magento.com/">Magento</a></li>
                     </ul>
                 </li>
             </ul>
@@ -115,7 +111,7 @@
                             title="Document Type Declaration">DTD</abbr> hinterlegt werden. Der Autor gibt damit
                         an,
                         welchen
-                        Regeln er in seinem Dokument folgt. Mittels eines <a rel="external"
+                        Regeln er in seinem Dokument folgt. Mittels eines <a target="_blank"
                                                                              href="https://validator.w3.org/">Validierungsdienstes</a>
                         kann
                         überprüft werden, ob die Regeln eingehalten werden. Bei einer Nichteinhaltung kann es zu
@@ -163,7 +159,7 @@
                     <p class="text-dimmed">
                         In der modernen Webentwicklung werden zunehmend <abbr
                             title="Cascading Stylesheets">CSS</abbr>-Preprozessoren
-                        wie <a rel="external" href="https://sass-lang.com"><abbr
+                        wie <a target="_blank" href="https://sass-lang.com"><abbr
                             title="Syntactically Awesome Style Sheets">SASS</abbr>/SCSS</a> oder LESS
                         eingesetzt,
                         die das
@@ -189,7 +185,7 @@
                         die
                         Besucher
                         der Seite. Die Auswirkungen sind sogar positiv, da z. B. bei der Nutzung von <abbr
-                            title="Cascading Stylesheets">CSS</abbr>-Frameworks wie "<a rel="external"
+                            title="Cascading Stylesheets">CSS</abbr>-Frameworks wie "<a target="_blank"
                                                                                         href="https://getbootstrap.com/">Twitter
                         Bootstrap</a>" die
                         einzelnen
@@ -219,10 +215,10 @@
                         Elemente
                         benötigt werden, die beim Laden der Seite im sichtbaren Bereich erscheinen (auch bekannt
                         als
-                        Viewport). Zur Generierung einer solchen Datei kann z. B. das Node.js-Plugin "<a rel="external"
+                        Viewport). Zur Generierung einer solchen Datei kann z. B. das Node.js-Plugin "<a target="_blank"
                                                                                                          href="https://github.com/pocketjoso/penthouse">Penthouse</a>"
                         verwendet
-                        werden, welches unter Nutzung des "<a rel="external" href="http://phantomjs.org/">Phantom</a>"-Browsers
+                        werden, welches unter Nutzung des "<a target="_blank" href="http://phantomjs.org/">Phantom</a>"-Browsers
                         und entsprechender Konfiguration
                         der
                         Viewports,
@@ -263,7 +259,7 @@
                         wieder auf den Kontext und die korrekte und semantisch richtige Anwendung an, weitere
                         Informationen
                         sind
-                        <a rel="external"
+                        <a target="_blank"
                            href="https://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">diesem
                             Blog-Artikel zu entnehmen</a>.</p>
                     <h2 id="textauszeichnung">Eine Überschrift 2. Ordnung mit nachfolgenden Textauszeichnungen und
@@ -384,7 +380,7 @@
                                             Wert besitzt.
                                         </td>
                                         <td>
-                                            <code class="code-block">&lt;a <strong>rel="external"</strong>&gt;Externer
+                                            <code class="code-block">&lt;a <strong>target=_blank</strong>&gt;Externer
                                                 Link&lt;/a&gt;</code>
                                         </td>
                                     </tr>
@@ -423,10 +419,10 @@
                     <!-- Bekommt position: relative -->
                     <div class="img-position-wrapper">
                         <!-- Bleibt einfach wo es ist, der nachfolgende Text wird einfach nach dem "normalen" Bild angezeigt. -->
-                        <img src="img/500x500.png" alt="Bild mit Größe 500x500" width="500" height="500"/>
+                        <img src="img/500x500.png" alt="Bild mit Größe 500x500" width="500" height="500">
                         <!-- Bekommt über die Klasse img-position-absolute ein position: absolute und wird aus dem Textfluss gerissen,
                             der nachfolgende Inhalt weiß nichts von diesem Bild. -->
-                        <img src="img/Peter-Griffin-CSS.gif" alt="CSS in a nutshell" class="img-position-absolute"/>
+                        <img src="img/Peter-Griffin-CSS.gif" alt="CSS in a nutshell" class="img-position-absolute">
                     </div>
 
                     <h1 id="listen">Listen</h1>
@@ -469,7 +465,7 @@
                         <dd>
                             <blockquote><p>HTML ist eine Auszeichnungssprache, die zur Erstellung von Inhalten im World
                                 Wide Web genutzt wird.
-                                <cite><a rel="external" href="https://www.gruenderszene.de/lexikon/begriffe/html">gruenderszene.de</a></cite>
+                                <cite><a target="_blank" href="https://www.gruenderszene.de/lexikon/begriffe/html">gruenderszene.de</a></cite>
                             </p>
                             </blockquote>
                         </dd>
@@ -477,7 +473,7 @@
                         <dd>
                             <blockquote><p>CSS ist eine Formatierungssprache für maschinenlesbare Sprachen wie HTML,
                                 SVG, und XML.
-                                <cite><a rel="external"
+                                <cite><a target="_blank"
                                          href="https://www.advidera.com/glossar/css/">advidera.com</a></cite></p>
                             </blockquote>
                         </dd>
@@ -486,7 +482,7 @@
                             <blockquote><p>von Netscape entwickelte Erweiterungssprache für HTML, um in HTML-Seiten
                                 interaktive Elemente verwirklichen zu können. Javascript-Befehle werden vom verwendeten
                                 Browser zur Laufzeit interpretiert und ausgeführt.
-                                <cite><a rel="external"
+                                <cite><a target="_blank"
                                          href="https://wirtschaftslexikon.gabler.de/definition/javascript-39650">Prof.
                                     Dr. Richard Lackes</a></cite>
                             </p>
@@ -506,15 +502,15 @@
                         <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite einzubinden. Die Anzeige
                         hat es
                         dafür aber in sich, wir verlinken auf den tollen, leichten, schnellen und mächtigen Text-Editor
-                        "Sublime Text". Sehensweit ist auch <a rel="external"
+                        "Sublime Text". Sehensweit ist auch <a target="_blank"
                                                                href="https://www.youtube.com/watch?v=SVkR1ZkNusI&amp;list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
                         Playlist auf Youtube</a> zur näheren Demonstration der
                         Funktionen.
                     </p>
                     <div class="ad">
-                        <a rel="external" href="https://www.sublimetext.com/" class="no-icon"
+                        <a target="_blank" href="https://www.sublimetext.com/" class="no-icon"
                            title="'A sophisticated text editor for code, markup and prose'"><img
-                                src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"/></a>
+                                src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"></a>
                     </div>
                 </div>
             </div>
@@ -527,7 +523,7 @@
     <div id="footer">
         <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
-            Konzeption, Gestaltung, Umsetzung und Verantwortung:<br/><a
+            Konzeption, Gestaltung, Umsetzung und Verantwortung:<br><a
                 href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
             Beeck</a> | <a href="mailto:julian.wittorf@student.fh-kiel.de">Julian Wittorf</a>
         </div>
@@ -538,30 +534,6 @@
 <!-- Ende umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
 <!-- JavaScript am Ende der Seite laden, um ein Blockieren der Seite beim Ladevorgang zu unterbinden und so die Ladegeschwindigkeite zu erhöhen -->
 <!-- https://www.guido-muehlwitz.de/2011/01/wieso-man-javascript-nicht-im-head-laedt-und-im-footer-besser-auch-nicht/ -->
-<script type="text/javascript">
-    //<![CDATA[
-    // Ganz sicher gehen, dass auch alles geladen wurde
-    window.onload = function () {
-        // Zusammenfassung: Externe Links mit dem Attribut rel="external" in neuen Fenster öffnen, um das Benutzererlebnis zu verbessern
-        if (!document.getElementsByTagName) return; // Prüfung, ob der Browser die verwendete Methode unterstützt
-        var anchorElements = document.getElementsByTagName("a");
-        for (var i = 0; i < anchorElements.length; i++) {
-            const anchor = anchorElements[i];
-            const href = anchor.getAttribute("href");
-            const rel = anchor.getAttribute("rel");
-            if (href && rel === "external") {
-                // Bei einem Klick auf das Element die angegebene Funktion ausführen
-                anchor.addEventListener("click", function () {
-                    // Standardaktionen unterbinden (unterscheiden sich teilweise je Browser)
-                    event.preventDefault();
-                    event.stopPropagation();
-                    // Link öffnen
-                    window.open(href);
-                });
-            }
-        }
-    };
-    //]]>
-</script>
+<!--<script></script>-->
 </body>
 </html>
