@@ -11,6 +11,8 @@ $blue: #66D9EF;
 $green: #A6E22E;
 $lime: #7FE22E;
 
+// TODO: Apply/Mix with Bootstrap variables
+
 // Color roles
 $color-default: $brown;
 $color-alternate: $pink;
@@ -107,6 +109,3 @@ $selection-bg: $pink;
 $selection-color: $white;
 
 // Vendors
-
-// Font Awesome iconfont, see https://fontawesome.com/how-to-use/on-the-web/using-with/sass
-$fa-font-path: "../fonts/fontawesome";

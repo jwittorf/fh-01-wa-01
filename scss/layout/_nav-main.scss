@@ -57,9 +57,16 @@
                     // signalisiert, dass dieser Menüpunkt weitere Unterpunkte hat.
                     // https://fontawesome.com/how-to-use/on-the-web/using-with/sass#mixins
                     &:after {
-                        @extend %fa-icon;
-                        @extend .fas;
-                        content: fa-content($fa-var-angle-down);
+                        position: relative;
+                        top: 1px;
+                        display: inline-block;
+                        font-family: 'Glyphicons Halflings';
+                        font-style: normal;
+                        font-weight: normal;
+                        line-height: 1;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        content: "\e114";
                         margin-left: 5px;
                     }
                 }

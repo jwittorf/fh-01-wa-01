@@ -1,3 +1,15 @@
-/.sass-cache/
-/css/
+# IDE
 /.idea/
+
+# Temp files
+/.sass-cache/
+
+# External files
+/node_modules/
+/src/fonts/vendor/
+/src/js/vendor/
+
+# Generated files
+/src/css/
+# Entire minified/optimized directory (src is for development only)
+/dist/

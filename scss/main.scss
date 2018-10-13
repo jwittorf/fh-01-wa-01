@@ -12,18 +12,28 @@
 // Alle mit einem Unterstrich versehenen Dateien werden nicht kompiliert, sondern dienen des Imports.
 // Durch die Nutzung von SCSS wird mittels Variabeln und Funktionen der Entwicklungsaufwand minimiert.
 
-// Unsere eigenen Variabeln
+// import some variables first, that are used inside bootstrap's variables file
+// this way we depended variables like $link-color: $brand-primary get resolved correctly
+@import "bootstrap-override";
+
+// include bootstrap variables before our variables, so we can use them in our variables
+// because our variables don't have !default they can overwrite these variables
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+// our own variables, we can use bootstrap variables, too. e.g. $myvar = $screen-md-min;
+// (this wouldn't be possible without loading bootstrap before)
+// the bootstrap variables are imported a second time below but will not "override" our variables
+// because bootstrap variables have !default (= only write/"override" if not already set)
+
 @import "variables";
 
+// in case we use bootstrap (and we do) let's include it
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
 // Drittanbieter Styles
-// Font Awesome Iconfont, hier nach Icons suchen:
-// https://fontawesome.com/icons?d=gallery&s=brands,solid&m=free
-@import "vendor/fontawesome/fontawesome";
-@import "vendor/fontawesome/solid";
-@import "vendor/fontawesome/brands";
+//@import "vendor/";
 
 // Basiskonfiguration von Elementen (ohne .Klasse, ohne #Id)
-@import "scaffolding/reset";
 @import "scaffolding/globals";
 @import "scaffolding/type";
 @import "scaffolding/lists";
