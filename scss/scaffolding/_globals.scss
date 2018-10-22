@@ -1,5 +1,8 @@
 a {
     text-decoration: $link-decoration;
+    &.btn {
+        text-decoration: none;
+    }
     // Improve, check with a
     &[href^="http://"],
     &[href^="https://"] {
@@ -36,4 +39,8 @@ a {
 
 img {
     max-width: 100%;
+}
+
+.required {
+    color: $brand-danger;
 }

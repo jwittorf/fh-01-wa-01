@@ -8,7 +8,6 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css" media="all">
     <link rel="stylesheet" href="css/print.css" media="print">
-    <!--#config sizefmt="abbrev" -->
 </head>
 <body>
 <!-- Start umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
@@ -78,70 +77,40 @@
                 <div class="grid-inner-l">
                     <section>
                         <header>
-                            <h1>Überschrift im Hauptinhalt</h1>
+                            <h1>Ausgabe der Formulareingaben</h1>
                         </header>
-                        <p>Hier steht etwas Blindtext, dieser Bereich wird später durch den eigentlichen Inhalt ersetzt.
-                            Für jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
-                            so wie hier.</p>
-                    </section>
-                    <section>
-                        <header>
-                            <h1>HTML5 Formular</h1>
-                        </header>
-                        <form action="form-result.php" method="post" id="form-demo">
-                            <div class="form-group">
-                                <label for="form-input-username">Benutzername <em class="required">*</em></label>
-                                <input type="text" id="form-input-username" name="Benutzername"
-                                       placeholder="TolleBiene31"
-                                       class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-input-password">Passwort <em class="required">*</em></label>
-                                <input type="password" id="form-input-password" name="Passwort" placeholder="Nicht 123!"
-                                       class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-input-email">E-Mail <em class="required">*</em></label>
-                                <input type="email" id="form-input-email" name="E-Mail" placeholder="name@beispiel.de"
-                                       class="form-control" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-input-dob">Geburtsdatum (tt.mm.jjjj)</label>
-                                <input type="date" id="form-input-dob" name="Geburtsdatum" placeholder="tt.mm.jjjj"
-                                       class="form-control">
-                            </div>
-                            <div class="btn-group">
-                                <button type="submit" class="btn btn-success">Abschicken <i
-                                        class="glyphicon glyphicon-ok"></i></button>
-                                <button type="reset" class="btn btn-danger">Zurücksetzen <i
-                                        class="glyphicon glyphicon-refresh"></i></button>
-                                <input type="button" class="btn btn-gradient"
-                                       value="Demo Button ohne Funktion aber mit Verlauf">
-                            </div>
-                        </form>
-                    </section>
-                    <section>
-                        <header>
-                            <h1>Datumsausgaben per SSI</h1>
-                        </header>
-                        <p>Hier steht das aktuelle Datum:</p>
-                        <!-- TODO: ä-->
-                        <pre><!--#echo var="DATE_LOCAL"--></pre>
-                        <p>Hier steht das Datum im GMT-Format:</p>
-                        <pre><!--#echo var="DATE_GMT"--></pre>
-                        <p>Hier steht das aktuelle Datum etwas variiert:</p>
-                        <pre><!--#config timefmt="%a, %d %B %Y"--><!--#echo var="DATE_LOCAL"--></pre>
-                    </section>
-                    <section>
-                        <header>
-                            <h1>Ausgabe der Dateigröße und des Datums nach der letzten Änderung per SSI</h1>
-                            <p>Dateigröße in Kilobytes:
-                            <pre><!--#fsize file="index.shtml" --></pre>
-                            </p>
-                            <p>Zeitpunkt der letzten Änderung:
-                            <pre><!--#flastmod file="index.shtml" --></pre>
-                            </p>
-                        </header>
+                        <p>Hier werden die Daten ausgegeben, die zuvor in das Formular eingegeben wurden:</p>
+                        <div class="list-group">
+							<?php
+							// Collect all results, make sure to update this if new fields in index.shtml
+							$results = [
+								"Benutzername" => $_POST["Benutzername"],
+								"Passwort" => $_POST["Passwort"],
+								"E-Mail" => $_POST["E-Mail"],
+								"Geburtsdatum" => $_POST["Geburtsdatum"]
+							];
+							// Prepare empty array for empty results
+							$emptyResults = [];
+							foreach ($results as $name => $input) {
+								if (!empty($input)) {
+									// Output every filled input with the html name attribute as heading
+									echo "<div class=\"list-group-item\">";
+									echo "<h3 class=\"list-group-item-heading\">" . $name . "</h3>";
+									echo "<p class=\"list-group-item-text\">" . $input . "</p>";
+									echo "</div>";
+								} else {
+									// Collect empty inputs to compare with count of given input
+									array_push($emptyResults, $name);
+								}
+							}
+							if (count($emptyResults) === count($results)) {
+								// If, somehow, the html validation fails and the user submits empty values
+								echo "<p class=\"alert alert-danger\">Achtung, alle Felder sind leer!</p>";
+							}
+							?>
+                        </div>
+                        <a href="index.shtml" class="btn btn-warning"><i class="glyphicon glyphicon-chevron-left"></i>
+                            Zurück zur Eingabe</a>
                     </section>
                 </div>
             </main>
@@ -162,13 +131,13 @@
                             Text-Editor
                             "Sublime Text". Sehensweit ist auch <a target="_blank"
                                                                    href="https://www.youtube.com/watch?v=SVkR1ZkNusI&amp;list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
-                            Playlist auf Youtube</a> zur näheren Demonstration der
+                                Playlist auf Youtube</a> zur näheren Demonstration der
                             Funktionen.
                         </p>
                         <div class="ad">
                             <a target="_blank" href="https://www.sublimetext.com/" class="no-icon"
                                title="'A sophisticated text editor for code, markup and prose'"><img
-                                    src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"></a>
+                                        src="img/Sublime-Text.svg" alt="Sublime Text" width="502" height="64"></a>
                         </div>
                     </section>
                 </div>
@@ -183,8 +152,8 @@
         <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
             Konzeption, Gestaltung, Umsetzung und Verantwortung:<br><a
-                href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
-            Beeck</a> | <a href="mailto:julian.wittorf@student.fh-kiel.de">Julian Wittorf</a>
+                    href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
+                Beeck</a> | <a href="mailto:julian.wittorf@student.fh-kiel.de">Julian Wittorf</a>
         </div>
         <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     </footer>
