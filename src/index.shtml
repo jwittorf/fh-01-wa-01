@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css" media="all">
     <link rel="stylesheet" href="css/print.css" media="print">
+    <!--#config sizefmt="abbrev" -->
 </head>
 <body>
 <!-- Start umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
@@ -81,6 +82,27 @@
                         </header>
                         <p>Hier steht etwas Blindtext, dieser Bereich wird später durch den eigentlichen Inhalt ersetzt.
                             Für jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich, so wie hier.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h1>Datumsausgaben per SSI</h1>
+                        </header>
+                        <p>Hier steht das aktuelle Datum:</p>
+                        <!-- TODO: ä-->
+                        <pre><!--#echo var="DATE_LOCAL"--></pre>
+                        <p>Hier steht das Datum im GMT-Format:</p>
+                        <pre><!--#echo var="DATE_GMT"--></pre>
+                        <p>Hier steht das aktuelle Datum etwas variiert:</p>
+                        <pre><!--#config timefmt="%a, %d %B %Y"--><!--#echo var="DATE_LOCAL"--></pre>
+                    </section>
+                    <section>
+                        <header>
+                            <h1>Ausgabe der Dateigröße und des Datums nach der letzten Änderung per SSI</h1>
+                            <p>Dateigröße in Kilobytes:
+                            <pre><!--#fsize file="index.shtml" --></pre></p>
+                            <p>Zeitpunkt der letzten Änderung:
+                            <pre><!--#flastmod file="index.shtml" --></pre></p>
+                        </header>
                     </section>
                 </div>
             </main>
