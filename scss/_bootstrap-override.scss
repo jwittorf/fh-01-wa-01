@@ -61,23 +61,23 @@ $headings-line-height: 1.25em;
 
 $headings-margin-default: 1.5em 0 .5em; // Own variable
 
-$headings-color-default: $blue; // Own variable
+$headings-color: $blue; // Own variable
 $headings-color-alternate: $green; // Own variable
 
 $h1-font-family: $headings-font-family-alternate; // Own variable
 $h1-color: $headings-color-alternate; // Own variable
 
 $h2-font-family: $headings-font-family-alternate; // Own variable
-$h2-color: $headings-color-default; // Own variable
+$h2-color: $headings-color; // Own variable
 
 $h3-font-family: $headings-font-family-alternate; // Own variable
 $h3-color: $headings-color-alternate; // Own variable
 
 $h4-font-family: $headings-font-family; // Own variable
-$h4-color: $headings-color-default; // Own variable
+$h4-color: $headings-color; // Own variable
 
 $h5-font-family: $headings-font-family; // Own variable
-$h5-color: $headings-color-default; // Own variable
+$h5-color: $headings-color; // Own variable
 
 $h6-font-family: $headings-font-family;
-$h6-color: $headings-color-default;
+$h6-color: $headings-color;

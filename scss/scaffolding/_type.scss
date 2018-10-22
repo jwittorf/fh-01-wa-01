@@ -1,11 +1,3 @@
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-    color: $headings-color-default;
-    font-weight: $headings-font-weight;
-    margin: $headings-margin-default;
-    line-height: $headings-line-height;
-}
-
 h1, .h1 {
     font-family: $h1-font-family;
     font-size: $font-size-h1;
