@@ -1,1 +1,83 @@
 $icon-font-path: "../fonts/vendor/bootstrap/";
+
+
+//== Colors
+//
+//## Gray and brand color for use across Bootstrap.
+// Color roles
+$brand-default: $brown;
+$brand-alternate: $pink;
+
+$brand-success: $green;
+$brand-info: $blue;
+$brand-warning: $yellow;
+$brand-danger: $red;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg: $gray;
+//** Global text color on `<body>`.
+$text-color: $brand-default;
+
+$font-family-sans-serif: "Segoe UI", Helvetica, "Arial Narrow", Arial, sans-serif;
+$font-family-serif: "Times New Roman", Times, serif;
+$font-family-monospace: "Consolas", "Monaco", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New";
+
+$font-family-base: $font-family-monospace;
+$font-family-special: $font-family-sans-serif; // Own variable
+
+$font-size-base: 16px;
+$font-size-small: $font-size-base - 4;
+$font-size-large: $font-size-base + 4;
+
+// Links
+$link-color: $brand-alternate;
+
+$link-hover-color: darken($link-color, 20%);
+$link-hover-decoration: underline;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-size-h1: $font-size-base * 2;
+$font-size-h2: $font-size-h1 - 4;
+$font-size-h3: $font-size-h2 - 4;
+$font-size-h4: $font-size-h3 - 4;
+$font-size-h5: $font-size-h4 - 4;
+$font-size-h6: $font-size-h5 - 4;
+
+//$line-height-base: ($font-size-base * 1.5);
+
+$headings-font-family: $font-family-base;
+$headings-font-family-alternate: $font-family-special; // Own variable
+
+$headings-font-weight: bold;
+$headings-line-height: 1.25em;
+
+$headings-margin-default: 1.5em 0 .5em; // Own variable
+
+$headings-color-default: $blue; // Own variable
+$headings-color-alternate: $green; // Own variable
+
+$h1-font-family: $headings-font-family-alternate; // Own variable
+$h1-color: $headings-color-alternate; // Own variable
+
+$h2-font-family: $headings-font-family-alternate; // Own variable
+$h2-color: $headings-color-default; // Own variable
+
+$h3-font-family: $headings-font-family-alternate; // Own variable
+$h3-color: $headings-color-alternate; // Own variable
+
+$h4-font-family: $headings-font-family; // Own variable
+$h4-color: $headings-color-default; // Own variable
+
+$h5-font-family: $headings-font-family; // Own variable
+$h5-color: $headings-color-default; // Own variable
+
+$h6-font-family: $headings-font-family;
+$h6-color: $headings-color-default;

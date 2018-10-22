@@ -1,20 +1,5 @@
-body {
-    background: $body-bg;
-    color: $body-color;
-    font-size: $body-font-size;
-    line-height: $body-line-height;
-    font-family: $body-font-family;
-}
-
 a {
-    color: $link-color;
-    text-decoration: $link-text-decoration;
-    &:focus,
-    &:hover,
-    &:active {
-        color: $link-hover-color;
-        text-decoration: $link-hover-text-decoration;
-    }
+    text-decoration: $link-decoration;
     // Improve, check with a
     &[href^="http://"],
     &[href^="https://"] {

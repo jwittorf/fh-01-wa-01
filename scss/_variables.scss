@@ -11,95 +11,17 @@ $blue: #66D9EF;
 $green: #A6E22E;
 $lime: #7FE22E;
 
-// TODO: Apply/Mix with Bootstrap variables
-
-// Color roles
-$color-default: $brown;
-$color-alternate: $pink;
-
-$color-success: $green;
-$color-danger: $red;
-$color-warning: $yellow;
-$color-info: $blue;
-
-// Fonts
-$font-family-monospace: "Consolas", "Monaco", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "Courier New";
-$font-family-serif: "Times New Roman", Times, serif;
-$font-family-sans-serif: "Segoe UI", Helvetica, "Arial Narrow", Arial, sans-serif;
-
-$font-size-base: 16px;
-$font-size-small: $font-size-base - 4;
-$font-size-large: $font-size-base + 4;
-
-$font-line-height-base: $font-size-base * 1.5;
-
-$font-family-base: $font-family-monospace;
-$font-family-special: $font-family-sans-serif;
-
 // Body
-$body-bg: $gray;
-$body-color: $color-default;
-$body-font-family: $font-family-base;
-$body-font-size: $font-size-base;
-$body-line-height: $font-line-height-base;
 $body-margin-default: 10px 0 20px;
 
-// Headings
-$headings-font-family-default: $font-family-base;
-$headings-font-family-alternate: $font-family-special;
-$headings-font-weight: bold;
-$headings-line-height: 1.25em;
-
-$headings-margin-default: 1.5em 0 .5em;
-
-$headings-color-default: $blue;
-$headings-color-alternate: $green;
-
-$h1-font-family: $headings-font-family-alternate;
-$h1-color: $headings-color-alternate;
-
-$h2-font-family: $headings-font-family-alternate;
-$h2-color: $headings-color-default;
-
-$h3-font-family: $headings-font-family-alternate;
-$h3-color: $headings-color-alternate;
-
-$h4-font-family: $headings-font-family-default;
-$h4-color: $headings-color-default;
-
-$h5-font-family: $headings-font-family-default;
-$h5-color: $headings-color-default;
-
-$h6-font-family: $headings-font-family-default;
-$h6-color: $headings-color-default;
-
-$h1-font-size: $font-size-base * 2;
-$h2-font-size: $h1-font-size - 4;
-$h3-font-size: $h2-font-size - 4;
-$h4-font-size: $h3-font-size - 4;
-$h5-font-size: $h4-font-size - 4;
-$h6-font-size: $h5-font-size - 4;
-
 // Links
-$link-color: $color-alternate;
-$link-text-decoration: underline;
-
-$link-hover-color: darken($link-color, 20%);
-$link-hover-text-decoration: underline;
+$link-decoration: underline;
 
 // Grid Framework
 $grid-inner-padding: 30px;
 
-// Buttons
-
-// Breakpoints
-
 // Header
 $header-bg: #fff;
-
-// Content
-
-// Nav-Main
 
 // Footer
 $footer-bg: darken($gray, 15%);
@@ -107,5 +29,3 @@ $footer-bg: darken($gray, 15%);
 // Selection
 $selection-bg: $pink;
 $selection-color: $white;
-
-// Vendors

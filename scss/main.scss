@@ -12,6 +12,8 @@
 // Alle mit einem Unterstrich versehenen Dateien werden nicht kompiliert, sondern dienen des Imports.
 // Durch die Nutzung von SCSS wird mittels Variabeln und Funktionen der Entwicklungsaufwand minimiert.
 
+@import "variables";
+
 // import some variables first, that are used inside bootstrap's variables file
 // this way we depended variables like $link-color: $brand-primary get resolved correctly
 @import "bootstrap-override";
@@ -36,13 +38,11 @@
 // Basiskonfiguration von Elementen (ohne .Klasse, ohne #Id)
 @import "scaffolding/globals";
 @import "scaffolding/type";
-@import "scaffolding/lists";
-@import "scaffolding/tables";
+//@import "scaffolding/tables";
 
 // Komponenten, die wir häufiger pro Seite verwenden (alles mit einer .Klasse)
 //@import "components/XXX";
 @import "components/text";
-@import "components/container";
 @import "components/grid";
 @import "components/ad";
 @import "components/img-position";
