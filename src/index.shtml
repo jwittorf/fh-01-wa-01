@@ -81,7 +81,40 @@
                             <h1>Überschrift im Hauptinhalt</h1>
                         </header>
                         <p>Hier steht etwas Blindtext, dieser Bereich wird später durch den eigentlichen Inhalt ersetzt.
-                            Für jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich, so wie hier.</p>
+                            Für jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
+                            so wie hier.</p>
+                    </section>
+                    <section>
+                        <header>
+                            <h1>HTML5 Formular</h1>
+                        </header>
+                        <form action="" id="form-demo">
+                            <div class="form-group">
+                                <label for="form-input-username">Benutzername</label>
+                                <input type="text" id="form-input-username" placeholder="TolleBiene31"
+                                       class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-input-password">Passwort</label>
+                                <input type="password" id="form-input-password" placeholder="Nicht 123!"
+                                       class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-input-email">E-Mail</label>
+                                <input type="email" id="form-input-email" placeholder="name@beispiel.de"
+                                       class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-input-dob">Geburtsdatum (tt.mm.jjjj)</label>
+                                <input type="date" id="form-input-dob" placeholder="tt.mm.jjjj"
+                                       class="form-control">
+                            </div>
+                            <div class="btn-group">
+                                <input type="submit" class="btn btn-success" value="Abschicken">
+                                <input type="reset" class="btn btn-danger" value="Zurücksetzen">
+                                <input type="button" class="btn btn-custom" value="Demo Button ohne Funktion">
+                            </div>
+                        </form>
                     </section>
                     <section>
                         <header>
