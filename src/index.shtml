@@ -3,6 +3,11 @@
 <head>
     <title>Aufgabenteil 2: Entwicklung von HTML5-Dokumenten, Formularen und Serveranfragen</title>
     <meta charset="utf-8">
+    <!-- TODO: set charset to Latin-1 if we can't fix the broken date,
+        this would result in having to convert all special characters on this page.
+        If we shall use old technologies, we'll just use the old approaches, too.
+    -->
+    <!--<meta charset="x-iso-8859-11">-->
     <meta name="author" content="Philipp Beeck, Julian Wittorf">
     <!-- Icon in der Adresszeile des Brpwsers -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
