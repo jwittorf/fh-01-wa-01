@@ -107,7 +107,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="form-input-dob">Geburtsdatum (tt.mm.jjjj)</label>
-                                <input type="date" id="form-input-dob" name="Geburtsdatum" placeholder="tt.mm.jjjj"
+                                <!-- only partial support for <input type="date"> -->
+                                <!-- https://caniuse.com/#search=date -->
+                                <!-- Edge, Chrome, Firefox, Opera, iOS Safari, Android and Blackberry Browser are good -->
+                                <!-- Only lacs IE 11, Safary, Opera Mini and IE Mobile support -->
+                                <input type="date" id="form-input-dob" name="Geburtsdatum"
                                        class="form-control">
                             </div>
                             <div class="btn-group">
