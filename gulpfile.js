@@ -49,11 +49,14 @@ gulp.task('production-assets', function () {
 		.pipe(imagemin())
 		.pipe(gulp.dest('dist/img'));
 
+    var videos = gulp.src('src/video/**/*')
+        .pipe(gulp.dest('dist/video'));
+
     var htaccess = gulp.src('.htaccess.sample')
         .pipe(rename('.htaccess'))
         .pipe(gulp.dest('dist'));
 
-	return merge_streams(fonts, images, htaccess);
+	return merge_streams(fonts, images, videos, htaccess);
 });
 
 /**
