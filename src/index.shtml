@@ -139,12 +139,10 @@
                     <section>
                         <header>
                             <h1>Ausgabe der Dateigröße und des Datums nach der letzten Änderung per SSI</h1>
-                            <p>Dateigröße in Kilobytes:
-                            <pre><!--#fsize file="index.shtml" --></pre>
-                            </p>
-                            <p>Zeitpunkt der letzten Änderung:
-                            <pre><!--#flastmod file="index.shtml" --></pre>
-                            </p>
+                            <p>Dateigröße in Kilobytes:</p>
+                            <pre><!--#fsize file="index.shtml"--></pre>
+                            <p>Zeitpunkt der letzten Änderung:</p>
+                            <pre><!--#flastmod file="index.shtml"--></pre>
                         </header>
                     </section>
                     <section>
