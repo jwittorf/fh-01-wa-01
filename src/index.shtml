@@ -170,7 +170,9 @@
             <aside id="content-side" class="grid-25-r">
                 <div class="grid-inner-r">
                     <section>
-                        <header class="h6">Hier befindet sich die Sidebar oder der "Nebeninhalt"</header>
+                        <header>
+                            <h6>Hier befindet sich die Sidebar oder der "Nebeninhalt"</h6>
+                        </header>
                         <p>
                             Traditionell werden hier Anzeigen oder weitere "Nebeninformationen" angezeigt. Diese sind
                             aber
