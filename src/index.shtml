@@ -156,6 +156,13 @@
                             </video>
                         </header>
                     </section>
+                    <section>
+                        <header>
+                            <h1>Animierte .gif-Datei</h1>
+                        </header>
+                    </section>
+                    <img src="img/Peter-Griffin-CSS.gif"
+                         alt="Animiertes .gif Meme von Peter Griffin und den täglichen CSS Struggles">
                 </div>
             </main>
             <!-- Ende Hauptinhalt #content-main mit Aufteilung in 75% links der Inhaltsbereiche -->
