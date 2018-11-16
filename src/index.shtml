@@ -154,8 +154,8 @@
                         <header>
                             <h1>Videoausgabe auf unserer Website</h1>
                             <video width="640" height="320" controls>
-                                <source src="movie/movie.mp4" type="video/mp4">
-                                <source src="movie/movie.ogg" type="video/ogg">
+                                <source src="video/movie.mp4" type="video/mp4">
+                                <source src="video/movie.ogg" type="video/ogg">
                             </video>
                             <p>Dieses Video wurde bereitgestellt von <a target="_blank" href="https://sample-videos.com/">
                                                                         https://sample-videos.com/
