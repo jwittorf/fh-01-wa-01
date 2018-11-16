@@ -164,14 +164,13 @@
                         </header>
                     </section>
                     <section>
-<<<<<<< HEAD
                         <header>
                             <h1>Animierte .gif-Datei</h1>
                         </header>
+                        <img src="img/Peter-Griffin-CSS.gif"
+                             alt="Animiertes .gif Meme von Peter Griffin und den täglichen CSS Struggles">
                     </section>
-                    <img src="img/Peter-Griffin-CSS.gif"
-                         alt="Animiertes .gif Meme von Peter Griffin und den täglichen CSS Struggles">
-=======
+                    <section>
                         <h1>Hier findet ein Test statt</h1>
                         <!--#exec cmd="cgi-bin/echo.pl"-->
 
