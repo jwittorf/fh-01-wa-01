@@ -154,18 +154,29 @@
                         <header>
                             <h1>Videoausgabe auf unserer Website</h1>
                             <video width="640" height="320" controls>
-                                <source src="movie.mp4" type="video/mp4">
-                                <source src="movie.ogg" type="video/ogg">
+                                <source src="movie/movie.mp4" type="video/mp4">
+                                <source src="movie/movie.ogg" type="video/ogg">
                             </video>
+                            <p>Dieses Video wurde bereitgestellt von <a target="_blank" href="https://sample-videos.com/">
+                                                                        https://sample-videos.com/
+                                                                    </a>
+                            </p>
                         </header>
                     </section>
                     <section>
+<<<<<<< HEAD
                         <header>
                             <h1>Animierte .gif-Datei</h1>
                         </header>
                     </section>
                     <img src="img/Peter-Griffin-CSS.gif"
                          alt="Animiertes .gif Meme von Peter Griffin und den täglichen CSS Struggles">
+=======
+                        <h1>Hier findet ein Test statt</h1>
+                        <!--#exec cmd="cgi-bin/echo.pl"-->
+
+                        <!-- Hier ist die Stelle wo ich nicht weiter komme, mal sehen ob J eine Idee hat -->
+                    </section>
                 </div>
             </main>
             <!-- Ende Hauptinhalt #content-main mit Aufteilung in 75% links der Inhaltsbereiche -->
