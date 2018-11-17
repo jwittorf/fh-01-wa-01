@@ -70,10 +70,10 @@
                 <div class="grid-inner-l">
                     <section>
                         <header>
-                            <h1>Überschrift im Hauptinhalt</h1>
+                            <h1>&Uuml;berschrift im Hauptinhalt</h1>
                         </header>
-                        <p>Hier steht etwas Blindtext, dieser Bereich wird später durch den eigentlichen Inhalt ersetzt.
-                            Für jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
+                        <p>Hier steht etwas Blindtext, dieser Bereich wird sp&auml;ter durch den eigentlichen Inhalt ersetzt.
+                            F&uuml;r jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
                             so wie hier.</p>
                     </section>
                     <section>
@@ -109,7 +109,7 @@
                             <div class="btn-group">
                                 <button type="submit" class="btn btn-success">Abschicken <i
                                         class="glyphicon glyphicon-ok"></i></button>
-                                <button type="reset" class="btn btn-danger">Zurücksetzen <i
+                                <button type="reset" class="btn btn-danger">Zur&uuml;cksetzen <i
                                         class="glyphicon glyphicon-refresh"></i></button>
                                 <input type="button" class="btn btn-gradient"
                                        value="Demo Button ohne Funktion aber mit Verlauf">
@@ -129,10 +129,10 @@
                     </section>
                     <section>
                         <header>
-                            <h1>Ausgabe der Dateigröße und des Datums nach der letzten Änderung per SSI</h1>
-                            <p>Dateigröße in Kilobytes:</p>
+                            <h1>Ausgabe der Dateigr&ouml;&szlig;e und des Datums nach der letzten &Auml;nderung per SSI</h1>
+                            <p>Dateigr&ouml;&szlig;e in Kilobytes:</p>
                             <pre><!--#fsize file="index.shtml"--></pre>
-                            <p>Zeitpunkt der letzten Änderung:</p>
+                            <p>Zeitpunkt der letzten &Auml;nderung:</p>
                             <pre><!--#flastmod file="index.shtml"--></pre>
                         </header>
                     </section>
@@ -171,15 +171,15 @@
                         <p>
                             Traditionell werden hier Anzeigen oder weitere "Nebeninformationen" angezeigt. Diese sind
                             aber
-                            oft auch relevant, wir kombinieren hier beides und erfüllen damit auch den Aufgabenteil eine
+                            oft auch relevant, wir kombinieren hier beides und erf&uuml;llen damit auch den Aufgabenteil eine
                             <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite einzubinden. Die
                             Anzeige
                             hat es
-                            dafür aber in sich, wir verlinken auf den tollen, leichten, schnellen und mächtigen
+                            daf&uuml;r aber in sich, wir verlinken auf den tollen, leichten, schnellen und m&auml;chtigen
                             Text-Editor
                             "Sublime Text". Sehensweit ist auch <a target="_blank"
                                                                    href="https://www.youtube.com/watch?v=SVkR1ZkNusI&amp;list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
-                            Playlist auf Youtube</a> zur näheren Demonstration der
+                            Playlist auf Youtube</a> zur n&auml;heren Demonstration der
                             Funktionen.
                         </p>
                         <div class="ad">
