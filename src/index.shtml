@@ -83,18 +83,18 @@
                         <form action="form-result.php" method="post" id="form-demo">
                             <div class="form-group">
                                 <label for="form-input-username">Benutzername <em class="required">*</em></label>
-                                <input type="text" id="form-input-username" name="Benutzername"
+                                <input type="text" id="form-input-username" name="username"
                                        placeholder="TolleBiene31"
                                        class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="form-input-password">Passwort <em class="required">*</em></label>
-                                <input type="password" id="form-input-password" name="Passwort" placeholder="Nicht 123!"
+                                <input type="password" id="form-input-password" name="password" placeholder="Nicht 123!"
                                        class="form-control" required>
                             </div>
                             <div class="form-group">
                                 <label for="form-input-email">E-Mail <em class="required">*</em></label>
-                                <input type="email" id="form-input-email" name="E-Mail" placeholder="name@beispiel.de"
+                                <input type="email" id="form-input-email" name="email" placeholder="name@beispiel.de"
                                        class="form-control" required>
                             </div>
                             <div class="form-group">
@@ -103,7 +103,7 @@
                                 <!-- https://caniuse.com/#search=date -->
                                 <!-- Edge, Chrome, Firefox, Opera, iOS Safari, Android and Blackberry Browser are good -->
                                 <!-- Only lacs IE 11, Safari, Opera Mini and IE Mobile support -->
-                                <input type="date" id="form-input-dob" name="Geburtsdatum"
+                                <input type="date" id="form-input-dob" name="dob"
                                        class="form-control">
                             </div>
                             <div class="btn-group">

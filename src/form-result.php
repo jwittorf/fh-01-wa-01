@@ -84,10 +84,10 @@
 							<?php
 							// Collect all results, make sure to update this if new fields in index.shtml
 							$results = [
-								"Benutzername" => $_POST["Benutzername"],
-								"Passwort" => $_POST["Passwort"],
-								"E-Mail" => $_POST["E-Mail"],
-								"Geburtsdatum" => $_POST["Geburtsdatum"]
+								"Benutzername" => $_POST["username"],
+								"Passwort" => $_POST["password"],
+								"E-Mail" => $_POST["email"],
+								"Geburtsdatum" => $_POST["dob"]
 							];
 							// Prepare empty array for empty results
 							$emptyResults = [];
