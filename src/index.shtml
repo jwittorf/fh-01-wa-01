@@ -2,12 +2,10 @@
 <html lang="de">
 <head>
     <title>Aufgabenteil 2: Entwicklung von HTML5-Dokumenten, Formularen und Serveranfragen</title>
-    <meta charset="utf-8">
-    <!-- TODO: set charset to Latin-1 if we can't fix the broken date,
-        this would result in having to convert all special characters on this page.
-        If we shall use old technologies, we'll just use the old approaches, too.
-    -->
-    <!--<meta charset="x-iso-8859-11">-->
+    <!--<meta charset="utf-8">-->
+    <!-- SSI/Apache uses ISO-8859-1, not UTF-8, therefore use different charset -->
+    <!-- Apache considers ISO-8859-1 as safe, therefore we will not adjust the default charset for the entire server (in multiple places) -->
+    <meta charset="iso-8859-1">
     <meta name="author" content="Philipp Beeck, Julian Wittorf">
     <!-- Icon in der Adresszeile des Brpwsers -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -16,11 +14,11 @@
     <!--#config sizefmt="abbrev" -->
 </head>
 <body>
-<!-- Start umschlieÃŸender #wrapper fÃ¼r die ganze Seite, fÃ¼r z. B. weitere Stile -->
+<!-- Start umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
 <div id="wrapper">
     <!-- Start #header mit Titel und Logo -->
     <header id="header">
-        <!-- Start allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
+        <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
             <div class="grid-wrapper">
                 <div class="grid-75-l">
@@ -41,12 +39,12 @@
                 </div>
             </div>
         </div>
-        <!-- Ende allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
+        <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     </header>
     <!-- Ende #header -->
     <!-- Start #nav-main Hauptnavigation -->
     <nav id="nav-main">
-        <!-- Start allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
+        <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
             <ul>
                 <li><a href="#">HTML</a></li>
@@ -72,21 +70,21 @@
                 </li>
             </ul>
         </div>
-        <!-- Ende allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
+        <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     </nav>
-    <!-- Start allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
+    <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     <div class="container">
-        <!-- Start allgemeiner Inhalt #content mit umschlieÃŸendem .grid-wrapper fÃ¼r die Aufteilung der Inhaltsbereiche -->
+        <!-- Start allgemeiner Inhalt #content mit umschließendem .grid-wrapper für die Aufteilung der Inhaltsbereiche -->
         <div id="content" class="grid-wrapper">
             <!-- Start Hauptinhalt #content-main mit Aufteilung in 75% links der Inhaltsbereiche -->
             <main id="content-main" class="grid-75-l">
                 <div class="grid-inner-l">
                     <section>
                         <header>
-                            <h1>Ãœberschrift im Hauptinhalt</h1>
+                            <h1>Überschrift im Hauptinhalt</h1>
                         </header>
-                        <p>Hier steht etwas Blindtext, dieser Bereich wird spÃ¤ter durch den eigentlichen Inhalt ersetzt.
-                            FÃ¼r jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
+                        <p>Hier steht etwas Blindtext, dieser Bereich wird später durch den eigentlichen Inhalt ersetzt.
+                            Für jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
                             so wie hier.</p>
                     </section>
                     <section>
@@ -122,7 +120,7 @@
                             <div class="btn-group">
                                 <button type="submit" class="btn btn-success">Abschicken <i
                                         class="glyphicon glyphicon-ok"></i></button>
-                                <button type="reset" class="btn btn-danger">ZurÃ¼cksetzen <i
+                                <button type="reset" class="btn btn-danger">Zurücksetzen <i
                                         class="glyphicon glyphicon-refresh"></i></button>
                                 <input type="button" class="btn btn-gradient"
                                        value="Demo Button ohne Funktion aber mit Verlauf">
@@ -134,7 +132,6 @@
                             <h1>Datumsausgaben per SSI</h1>
                         </header>
                         <p>Hier steht das aktuelle Datum:</p>
-                        <!-- TODO: Ã¤-->
                         <pre><!--#echo var="DATE_LOCAL"--></pre>
                         <p>Hier steht das Datum im GMT-Format:</p>
                         <pre><!--#echo var="DATE_GMT"--></pre>
@@ -143,10 +140,10 @@
                     </section>
                     <section>
                         <header>
-                            <h1>Ausgabe der DateigrÃ¶ÃŸe und des Datums nach der letzten Ã„nderung per SSI</h1>
-                            <p>DateigrÃ¶ÃŸe in Kilobytes:</p>
+                            <h1>Ausgabe der Dateigröße und des Datums nach der letzten Änderung per SSI</h1>
+                            <p>Dateigröße in Kilobytes:</p>
                             <pre><!--#fsize file="index.shtml"--></pre>
-                            <p>Zeitpunkt der letzten Ã„nderung:</p>
+                            <p>Zeitpunkt der letzten Änderung:</p>
                             <pre><!--#flastmod file="index.shtml"--></pre>
                         </header>
                     </section>
@@ -168,7 +165,7 @@
                             <h1>Animierte .gif-Datei</h1>
                         </header>
                         <img src="img/Peter-Griffin-CSS.gif"
-                             alt="Animiertes .gif Meme von Peter Griffin und den tÃ¤glichen CSS Struggles">
+                             alt="Animiertes .gif Meme von Peter Griffin und den täglichen CSS Struggles">
                     </section>
                     <section>
                         <h1>Hier findet ein Test statt</h1>
@@ -189,15 +186,15 @@
                         <p>
                             Traditionell werden hier Anzeigen oder weitere "Nebeninformationen" angezeigt. Diese sind
                             aber
-                            oft auch relevant, wir kombinieren hier beides und erfÃ¼llen damit auch den Aufgabenteil eine
+                            oft auch relevant, wir kombinieren hier beides und erfüllen damit auch den Aufgabenteil eine
                             <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite einzubinden. Die
                             Anzeige
                             hat es
-                            dafÃ¼r aber in sich, wir verlinken auf den tollen, leichten, schnellen und mÃ¤chtigen
+                            dafür aber in sich, wir verlinken auf den tollen, leichten, schnellen und mächtigen
                             Text-Editor
                             "Sublime Text". Sehensweit ist auch <a target="_blank"
                                                                    href="https://www.youtube.com/watch?v=SVkR1ZkNusI&amp;list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
-                            Playlist auf Youtube</a> zur nÃ¤heren Demonstration der
+                            Playlist auf Youtube</a> zur näheren Demonstration der
                             Funktionen.
                         </p>
                         <div class="ad">
@@ -210,23 +207,23 @@
             </aside>
             <!-- Ende Nebeninhalt #content-side mit Aufteilung in 25% rechts der Inhaltsbereiche -->
         </div>
-        <!-- Ende allgemeiner Inhalt #content mit umschlieÃŸendem .grid-wrapper fÃ¼r die Aufteilung der Inhaltsbereiche -->
+        <!-- Ende allgemeiner Inhalt #content mit umschließendem .grid-wrapper für die Aufteilung der Inhaltsbereiche -->
     </div>
-    <!-- Ende allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
-    <!-- Start FuÃŸzeile mit Urherberinformationen -->
+    <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
+    <!-- Start Fußzeile mit Urherberinformationen -->
     <footer id="footer">
-        <!-- Start allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
+        <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
         <div class="container">
             Konzeption, Gestaltung, Umsetzung und Verantwortung:<br><a
                 href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
             Beeck</a> | <a href="mailto:julian.wittorf@student.fh-kiel.de">Julian Wittorf</a>
         </div>
-        <!-- Ende allgemeiner umschlieÃŸender .container fÃ¼r die einheitliche Ausrichtung der Seitenelemente -->
+        <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     </footer>
-    <!-- Ende FuÃŸzeile mit Urherberinformationen -->
+    <!-- Ende Fußzeile mit Urherberinformationen -->
 </div>
-<!-- Ende umschlieÃŸender #wrapper fÃ¼r die ganze Seite, fÃ¼r z. B. weitere Stile -->
-<!-- JavaScript am Ende der Seite laden, um ein Blockieren der Seite beim Ladevorgang zu unterbinden und so die Ladegeschwindigkeite zu erhÃ¶hen -->
+<!-- Ende umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->
+<!-- JavaScript am Ende der Seite laden, um ein Blockieren der Seite beim Ladevorgang zu unterbinden und so die Ladegeschwindigkeite zu erhöhen -->
 <!-- https://www.guido-muehlwitz.de/2011/01/wieso-man-javascript-nicht-im-head-laedt-und-im-footer-besser-auch-nicht/ -->
 <!--<script></script>-->
 </body>
