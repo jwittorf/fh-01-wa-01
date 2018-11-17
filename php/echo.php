@@ -20,6 +20,6 @@ if ($mode == "browser") {
 		echo "</pre>";
 		echo "<p class=\"alert alert-success\">... Ausgabe beendet.</p>";
 	} else {
-		echo "<p class=\"alert alert-danger\">Keine Parameter Ã¼bergeben!</p>";
+		echo "<p class=\"alert alert-danger\">Keine Parameter übergeben!</p>";
 	}
 }
