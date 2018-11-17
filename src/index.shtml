@@ -211,15 +211,7 @@
     </div>
     <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
     <!-- Start Fußzeile mit Urherberinformationen -->
-    <footer id="footer">
-        <!-- Start allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
-        <div class="container">
-            Konzeption, Gestaltung, Umsetzung und Verantwortung:<br><a
-                href="mailto:philipp.beeck@student.fh-kiel.de">Philipp
-            Beeck</a> | <a href="mailto:julian.wittorf@student.fh-kiel.de">Julian Wittorf</a>
-        </div>
-        <!-- Ende allgemeiner umschließender .container für die einheitliche Ausrichtung der Seitenelemente -->
-    </footer>
+    <!--#include file="ssi/footer.html" -->
     <!-- Ende Fußzeile mit Urherberinformationen -->
 </div>
 <!-- Ende umschließender #wrapper für die ganze Seite, für z. B. weitere Stile -->

@@ -1,0 +1,7 @@
+# Make sure that directory listings are disabled.
+Options -Indexes
+
+# Don't let apache guess any filenames
+<IfModule mod_negotiation.c>
+	Options -MultiViews
+</IfModule>
