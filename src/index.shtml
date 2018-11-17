@@ -131,9 +131,9 @@
                         <header>
                             <h1>Ausgabe der Dateigr&ouml;&szlig;e und des Datums nach der letzten &Auml;nderung per SSI</h1>
                             <p>Dateigr&ouml;&szlig;e in Kilobytes:</p>
-                            <pre><!--#fsize file="index.php"--></pre>
+                            <pre><!--#fsize file="index.shtml"--></pre>
                             <p>Zeitpunkt der letzten &Auml;nderung:</p>
-                            <pre><!--#flastmod file="index.php"--></pre>
+                            <pre><!--#flastmod file="index.shtml"--></pre>
                         </header>
                     </section>
                     <section>
@@ -157,10 +157,8 @@
                              alt="Animiertes .gif Meme von Peter Griffin und den t?glichen CSS Struggles">
                     </section>
                     <section>
-                        <h1>Hier findet ein Test statt</h1>
-                        <!--#exec cmd="cgi-bin/echo.pl"-->
-
-                        <!-- Hier ist die Stelle wo ich nicht weiter komme, mal sehen ob J eine Idee hat -->
+                        <h1>Ausgabe der GET-Parameter als Text</h1>
+                        <!--#exec cgi="/cgi/echo.php" -->
                     </section>
                 </div>
             </main>
