@@ -55,7 +55,15 @@ gulp.task('production-assets', function () {
         .pipe(rename('.htaccess'))
         .pipe(gulp.dest('dist'));
 
-    return merge_streams(fonts, images, videos, htaccess);
+    // Regular content documents
+    var documents = gulp.src([
+        'src/*.html',
+        'src/*.shtml',
+        'src/*.php'
+    ])
+        .pipe(gulp.dest('dist'));
+
+    return merge_streams(fonts, images, videos, htaccess, documents);
 });
 
 /**
@@ -114,6 +122,7 @@ gulp.task('jsminify', function (cb) {
  */
 gulp.task('htmlminify', () => {
     // Check if .shtml will work, too
+    // It doesn't, neither does .php work, so leave out minification
     return gulp.src('src/*.html')
         .pipe(htmlmin({
             minifyJS: true,
@@ -177,4 +186,4 @@ gulp.task('dev', ['sass:dev'], function () {
 
 gulp.task('setup', ['install-assets', 'sass:dev']);
 gulp.task('default', ['dev']);
-gulp.task('production', ['sass:prod', 'jsminify', 'htmlminify', 'production-assets']);
+gulp.task('production', ['sass:prod', 'jsminify', 'production-assets']);
