@@ -80,7 +80,7 @@
                         <header>
                             <h1>HTML5 Formular</h1>
                         </header>
-                        <form action="form-result.php" method="post" id="form-demo">
+                        <form action="form-result.php" method="post" id="form-demo" accept-charset="utf-8">
                             <div class="form-group">
                                 <label for="form-input-username">Benutzername <em class="required">*</em></label>
                                 <input type="text" id="form-input-username" name="username"
