@@ -32,6 +32,6 @@
     "dependencies": {
         "bootstrap-sass": "^3.3.7",
         "enquire.js": "^2.1.6",
-        "jquery": "^2.2.4"
+        "jquery": "^3"
     }
 }
