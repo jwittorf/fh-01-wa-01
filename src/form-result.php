@@ -93,7 +93,8 @@
 							$emptyResults = [];
 							foreach ($results as $name => $input) {
 								if (!empty($input)) {
-									// Output every filled input with the html name attribute as heading
+									// Output every filled input with the $results key as heading
+									//(useful for multi-language websites with same html name attribute but different labels
 									echo "<div class=\"list-group-item\">";
 									echo "<h3 class=\"list-group-item-heading\">" . $name . "</h3>";
 									echo "<p class=\"list-group-item-text\">" . $input . "</p>";
