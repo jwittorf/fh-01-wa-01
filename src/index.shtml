@@ -67,10 +67,10 @@
                 <div class="grid-inner-l">
                     <section>
                         <header>
-                            <h1>Überschrift im Hauptinhalt</h1>
+                            <h1>Ãœberschrift im Hauptinhalt</h1>
                         </header>
-                        <p>Hier steht etwas Blindtext, dieser Bereich wird später durch den eigentlichen Inhalt ersetzt.
-                            Für jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
+                        <p>Hier steht etwas Blindtext, dieser Bereich wird spÃ¤ter durch den eigentlichen Inhalt ersetzt.
+                            FÃ¼r jeden Bereich gibt es dann einen <code>&lt;section&gt;&lt;/section&gt;</code>-Bereich,
                             so wie hier.</p>
                     </section>
                     <section>
@@ -117,7 +117,7 @@
                             <div class="btn-group">
                                 <button type="submit" class="btn btn-success">Abschicken <i
                                         class="glyphicon glyphicon-ok"></i></button>
-                                <button type="reset" class="btn btn-danger">Zurücksetzen <i
+                                <button type="reset" class="btn btn-danger">ZurÃ¼cksetzen <i
                                         class="glyphicon glyphicon-refresh"></i></button>
                             </div>
                         </form>
@@ -133,15 +133,15 @@
                         <p>
                             Traditionell werden hier Anzeigen oder weitere "Nebeninformationen" angezeigt. Diese sind
                             aber
-                            oft auch relevant, wir kombinieren hier beides und erfüllen damit auch den Aufgabenteil eine
+                            oft auch relevant, wir kombinieren hier beides und erfÃ¼llen damit auch den Aufgabenteil eine
                             <abbr title="Scalable Vector Graphic">SVG</abbr>-Datei in die Webseite einzubinden. Die
                             Anzeige
                             hat es
-                            dafür aber in sich, wir verlinken auf den tollen, leichten, schnellen und mächtigen
+                            dafÃ¼r aber in sich, wir verlinken auf den tollen, leichten, schnellen und mÃ¤chtigen
                             Text-Editor
                             "Sublime Text". Sehensweit ist auch <a target="_blank"
                                                                    href="https://www.youtube.com/watch?v=SVkR1ZkNusI&amp;list=PLpcSpRrAaOaqQMDlCzE_Y6IUUzaSfYocK">diese
-                            Playlist auf Youtube</a> zur näheren Demonstration der
+                            Playlist auf Youtube</a> zur nÃ¤heren Demonstration der
                             Funktionen.
                         </p>
                         <div class="ad">
