@@ -7,4 +7,15 @@
     background: linear-gradient(to bottom, #66d9ef 0%, #ae81ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66d9ef', endColorstr='#ae81ff', GradientType=0); /* IE6-9 */
     border-color: transparent;
+    &:focus,
+    &:hover,
+    &:active {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#66d9ef+0,ae81ff+100 */
+        background: #ae81ff; /* Old browsers */
+        background: -moz-linear-gradient(top, #ae81ff 0%, #66d9ef 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #ae81ff 0%, #66d9ef 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #ae81ff 0%, #66d9ef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ae81ff', endColorstr='#66d9ef', GradientType=0); /* IE6-9 */
+        border-color: transparent;
+    }
 }
