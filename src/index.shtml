@@ -154,7 +154,7 @@
                             <h1>Animierte .gif-Datei</h1>
                         </header>
                         <img src="img/Peter-Griffin-CSS.gif"
-                             alt="Animiertes .gif Meme von Peter Griffin und den t?glichen CSS Struggles">
+                             alt="Animiertes .gif Meme von Peter Griffin und den täglichen CSS Struggles">
                     </section>
                     <section>
                         <h1>Ausgabe der GET-Parameter als Text</h1>
