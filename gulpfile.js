@@ -51,6 +51,9 @@ gulp.task('production-assets', function () {
     var videos = gulp.src('src/video/**/*')
         .pipe(gulp.dest('dist/video'));
 
+    var ajax = gulp.src('src/ajax/**/*')
+        .pipe(gulp.dest('dist/ajax'));
+
     var htaccess = gulp.src('.htaccess.sample')
         .pipe(rename('.htaccess'))
         .pipe(gulp.dest('dist'));
@@ -63,7 +66,7 @@ gulp.task('production-assets', function () {
     ])
         .pipe(gulp.dest('dist'));
 
-    return merge_streams(fonts, images, videos, htaccess, documents);
+    return merge_streams(fonts, images, videos, ajax, htaccess, documents);
 });
 
 /**

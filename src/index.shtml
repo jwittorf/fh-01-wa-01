@@ -74,6 +74,17 @@
                     </section>
                     <section>
                         <header>
+                            <h1>AJAX-Demo</h1>
+                        </header>
+                        <div id="ajax-demo">
+                            <div class="btn-group">
+                                <button type="submit" class="btn btn-default" onclick="loadDocument()">Demo-Inhalt per AJAX</button>
+                            </div>
+                            <div id="ajax-demo-content"></div>
+                        </div>
+                    </section>
+                    <section>
+                        <header>
                             <h1>HTML5 Formular</h1>
                         </header>
                         <form action="form-result.php" method="post" id="form-demo" accept-charset="utf-8">
@@ -146,5 +157,18 @@
 </div>
 <!-- https://www.guido-muehlwitz.de/2011/01/wieso-man-javascript-nicht-im-head-laedt-und-im-footer-besser-auch-nicht/ -->
 <!--<script></script>-->
+<script>
+    function loadDocument() {
+        // TODO check the exact purposes, so you know, what you're doing
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                document.getElementById("ajax-demo-content").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "ajax/hello-world.txt", true);
+        xhttp.send();
+    }
+</script>
 </body>
 </html>
