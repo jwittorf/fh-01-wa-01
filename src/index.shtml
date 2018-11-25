@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/main.css" media="all">
     <link rel="stylesheet" href="css/print.css" media="print">
     <script src="js/main.js"></script>
+    <script src="js/init.js"></script>
 </head>
 <body>
 <div id="wrapper">
@@ -79,7 +80,7 @@
                         </header>
                         <div id="ajax-demo">
                             <div class="btn-group">
-                                <button type="submit" class="btn btn-default" onclick="loadDocument()">Demo-Inhalt per AJAX</button>
+                                <button type="submit" class="btn btn-default" id="ajax-demo-button">Demo-Inhalt per AJAX</button>
                             </div>
                             <div id="ajax-demo-content"></div>
                         </div>
