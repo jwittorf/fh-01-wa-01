@@ -52,7 +52,7 @@ function sendFormAjax(filename = "ajax-form-result.php", resultHtmlId = "ajax-fo
 
 function DynamicJS () {
     var CookieContent = document.cookie;
-    var CookieContentSliced = CookieContent.slice(10,105);
+    var CookieContentSliced = CookieContent.slice(CookieContent.indexOf("=") + 1,CookieContent.lastIndexOf(")") + 1);
     document.getElementById("Browser").innerHTML = "Offizieller Name Ihres Browsers: " + navigator.appName + "<br>"
                                                  + "Version Ihres Browsers: " + navigator.appVersion + "<br>"
                                                  + "HTTP Indentifikation Ihres Browsers: " + navigator.userAgent + "<br>";
