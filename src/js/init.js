@@ -20,7 +20,9 @@ window.onload = function () {
     };
  	document.getElementById("buttonInit").onclick = function () {
 		Init();
- 	};};
+ 	};
+};
+
 window.onbeforeunload = function () {
 	Cookie();
 };
