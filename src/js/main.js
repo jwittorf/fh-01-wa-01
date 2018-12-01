@@ -1,7 +1,7 @@
 // This file keeps all our functions, we call them in init.js
 
 // Load a document's content into a html element, specified by id
-function loadDocument(filename = "ajax/hello-world.txt", htmlId = "ajax-demo-content") {
+function loadDocument(filename = "ajax/hello-world.txt", resultHtmlId = "ajax-demo-content") {
     // Explanation see here: https://www.w3schools.com/xml/ajax_xmlhttprequest_create.asp
     // Create a new request object
     var xhttp = new XMLHttpRequest();
@@ -10,7 +10,7 @@ function loadDocument(filename = "ajax/hello-world.txt", htmlId = "ajax-demo-con
     // Define what to do when the request changes
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
-            document.getElementById(htmlId).innerHTML = this.responseText;
+            document.getElementById(resultHtmlId).innerHTML = this.responseText;
         }
     };
     // Send the actual request
