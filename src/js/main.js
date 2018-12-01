@@ -49,7 +49,6 @@ function sendFormAjax(filename = "ajax-form-result.php", resultHtmlId = "ajax-fo
     // Send the actual request with the formData
     xhttp.send(data);
 }
-
 function DynamicJS () {
     var CookieContent = document.cookie;
     var CookieContentSliced = CookieContent.slice(10,105);
