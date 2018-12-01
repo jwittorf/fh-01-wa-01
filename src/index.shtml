@@ -123,6 +123,13 @@
                             </div>
                         </form>
                     </section>
+                    <section id = "JS-Clientinformation">
+                        <header>
+                            <h1>Dieser Inhalt wird dynamisch per Javascript geladen</h1>
+                            <p id="Browser"></p>
+                            <p id="Cookie"></p>
+                        </header>
+                    </section>
                 </div>
             </main>
             <aside id="content-side" class="grid-25-r">

@@ -16,3 +16,21 @@ function loadDocument(filename = "ajax/hello-world.txt", htmlId = "ajax-demo-con
     // Send the actual request
     xhttp.send();
 }
+
+function DynamicJS () {
+    var CookieContent = document.cookie;
+    var CookieContentSliced = CookieContent.slice(10,105);
+    document.getElementById("Browser").innerHTML = "Offizieller Name Ihres Browsers: " + navigator.appName + "<br>"
+                                                 + "Version Ihres Browsers: " + navigator.appVersion + "<br>"
+                                                 + "HTTP Indentifikation Ihres Browsers: " + navigator.userAgent + "<br>";
+    document.getElementById("Cookie").innerHTML  =  CookieContentSliced;
+    console.log(navigator.appName);
+    console.log(navigator.appVersion);
+    console.log(navigator.userAgent);
+    console.log(document.cookie);
+}
+
+function Cookie () {
+    document.cookie = "LastVisit=Zeitpunkt des letzten Besuchs: " + new Date() + "; expires= Mon 31 Dec 2018 12:00:00 UTC;";
+    console.log(document.cookie);
+}
