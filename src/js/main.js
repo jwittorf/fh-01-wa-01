@@ -49,6 +49,7 @@ function sendFormAjax(filename = "ajax-form-result.php", resultHtmlId = "ajax-fo
     // Send the actual request with the formData
     xhttp.send(data);
 }
+
 function DynamicJS () {
     var CookieContent = document.cookie;
     var CookieContentSliced = CookieContent.slice(10,105);
@@ -65,4 +66,11 @@ function DynamicJS () {
 function Cookie () {
     document.cookie = "LastVisit=Zeitpunkt des letzten Besuchs: " + new Date() + "; expires= Mon 31 Dec 2018 12:00:00 UTC;";
     console.log(document.cookie);
+}
+
+function Init () {
+    document.getElementById("form-input-username").value = "MaxMustermann";
+    document.getElementById("form-input-password").value = "geheim";
+    document.getElementById("form-input-email").value    = "MaxMustermann@hotmail.com";
+    document.getElementById("form-input-dob").value      = "1965-05-15";
 }

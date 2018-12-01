@@ -16,8 +16,10 @@ window.onload = function () {
 
 //    Cookie();
     DynamicJS();
-};
 
+ 	document.getElementById("buttonInit").onclick = function () {
+		Init();
+ 	};};
 window.onbeforeunload = function () {
 	Cookie();
 };
