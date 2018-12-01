@@ -57,6 +57,7 @@ function DynamicJS () {
                                                  + "Version Ihres Browsers: " + navigator.appVersion + "<br>"
                                                  + "HTTP Indentifikation Ihres Browsers: " + navigator.userAgent + "<br>";
     document.getElementById("Cookie").innerHTML  =  CookieContentSliced;
+    console.log("Die Funktion DynamicJS wurde aufgerufen");
     console.log(navigator.appName);
     console.log(navigator.appVersion);
     console.log(navigator.userAgent);
@@ -73,4 +74,14 @@ function Init () {
     document.getElementById("form-input-password").value = "geheim";
     document.getElementById("form-input-email").value    = "MaxMustermann@hotmail.com";
     document.getElementById("form-input-dob").value      = "1965-05-15";
+}
+
+function DebuggerTest () {
+    for ( i = 0; i <= 50; i++) {
+        if ( i % 5 === 0) {
+            console.log(i);
+            debugger;
+        }
+    }
+
 }

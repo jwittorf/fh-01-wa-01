@@ -13,10 +13,11 @@ window.onload = function () {
         // Parameters: url to handle the request, id to write the result into, current form element (containing the data)
         sendFormAjax("ajax-form-result.php", "ajax-form-result", this);
     };
-
-//    Cookie();
     DynamicJS();
 
+    document.getElementById("buttonDebugger").onclick = function () {
+        DebuggerTest();
+    };
  	document.getElementById("buttonInit").onclick = function () {
 		Init();
  	};};
