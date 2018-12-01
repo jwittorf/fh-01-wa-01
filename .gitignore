@@ -3,6 +3,7 @@
 
 # Temp files
 /.sass-cache/
+/package-lock.json
 
 # External files
 /node_modules/
@@ -13,3 +14,4 @@
 /src/css/
 # Entire minified/optimized directory (src is for development only)
 /dist/
+
