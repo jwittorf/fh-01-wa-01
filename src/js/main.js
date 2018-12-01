@@ -11,6 +11,10 @@ function loadDocument(filename = "ajax/hello-world.txt", resultHtmlId = "ajax-de
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 200) {
             document.getElementById(resultHtmlId).innerHTML = this.responseText;
+        } else {
+            document.getElementById(resultHtmlId).innerHTML = "<p class=\"alert alert-danger\">Etwas ist schief gelaufen!<br>" +
+                "Fehlercode: " + this.status + "<br>" +
+                "Fehlermeldung: " + this.statusText + "</p>";
         }
     };
     // Send the actual request
@@ -35,6 +39,10 @@ function sendFormAjax(filename = "ajax-form-result.php", resultHtmlId = "ajax-fo
         if (this.readyState === 4 && this.status === 200) {
             // Write the content
             document.getElementById(resultHtmlId).innerHTML = this.responseText;
+        } else {
+            document.getElementById(resultHtmlId).innerHTML = "<p class=\"alert alert-danger\">Etwas ist schief gelaufen!<br>" +
+                "Fehlercode: " + this.status + "<br>" +
+                "Fehlermeldung: " + this.statusText + "</p>";
         }
     };
 
