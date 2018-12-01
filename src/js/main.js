@@ -83,5 +83,69 @@ function DebuggerTest () {
             debugger;
         }
     }
+}
 
+function paintCanvas(htmlId = "demo-canvas") {
+    var canvas = document.getElementById(htmlId);
+    if (canvas.getContext) {
+        var ctx = canvas.getContext("2d"),
+            cWidth = 300,
+            cHeight = 300,
+            centerX = cWidth / 2,
+            centerY = cHeight / 2,
+            dimension = 50,
+            counter = 0,
+            posX = centerX - dimension,
+            posY = centerY - dimension,
+            strokeColorRed = 50,
+            strokeColorGreen = 50,
+            strokeColorBlue = 50;
+        ctx.moveTo(posX, posY);
+        setInterval(function () {
+            // TODO: Fix color
+            strokeColor = "rgb(" + strokeColorRed + ", " + strokeColorGreen + ", " + strokeColorBlue + ")";
+            counter++;
+            switch (counter) {
+                case 1:
+                    posY -= dimension;
+                    // debugger;
+                    ctx.lineTo(posX, posY);
+                    break;
+                case 2:
+                    posX += dimension * 2;
+                    // debugger;
+                    ctx.lineTo(posX, posY);
+                    break;
+                case 3:
+                    posY += dimension;
+                    // debugger;
+                    ctx.lineTo(posX, posY);
+                    break;
+                case 4:
+                    posX -=dimension * 2;
+                    // debugger;
+                    ctx.lineTo(posX, posY);
+                    counter = 0;
+                    if (strokeColorRed > 230) {
+                        strokeColorRed = 10;
+                        strokeColorGreen = 10;
+                        strokeColorBlue = 10;
+                    } else {
+                        strokeColorRed += 20;
+                        strokeColorGreen += 20;
+                        strokeColorBlue += 20;
+                    }
+                    break;
+                default:
+                    alert("Irgendwas ist schief gegangen!");
+                    break;
+            }
+            ctx.stroke();
+            // ctx.lineTo(posX + 5, posY + 5);
+            // ctx.stroke();
+            // ctx.rotate(45);
+        }, 1000);
+    } else {
+        alert("Der eingesetzte Browser unterstützt kein HTML5 <canvas>!");
+    }
 }

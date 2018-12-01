@@ -21,6 +21,10 @@ window.onload = function () {
  	document.getElementById("buttonInit").onclick = function () {
 		Init();
  	};
+
+    document.getElementById("canvas-button").onclick = function() {
+        paintCanvas("demo-canvas");
+    };
 };
 
 window.onbeforeunload = function () {

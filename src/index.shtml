@@ -142,6 +142,16 @@
                             <button type="button" class="btn btn-default" id="buttonDebugger">Debugger <i
                                 class="glyphicon glyphicon-search"></i></button>
                     </section>
+                    <section>
+                        <header>
+                            <h1>
+                                Timer-gesteuertes Zeichnen im Canvas-Element
+                            </h1>
+                        </header>
+                        <button class="btn btn-default" id="canvas-button">Zeichnen starten</button>
+                        <canvas id="demo-canvas">
+                        </canvas>
+                    </section>
                 </div>
             </main>
             <aside id="content-side" class="grid-25-r">
