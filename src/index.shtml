@@ -140,7 +140,7 @@
                                 <h1>Hier befindet sich unser Button zum Testen vom Debugger</h1>
                             </header>
                             <button type="button" class="btn btn-default" id="buttonDebugger">Debugger <i
-                                class="glyphicon glyphicon-stroller"></i></button>
+                                class="glyphicon glyphicon-search"></i></button>
                     </section>
                 </div>
             </main>
