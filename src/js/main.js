@@ -16,6 +16,32 @@ function loadDocument(filename = "ajax/hello-world.txt", htmlId = "ajax-demo-con
     // Send the actual request
     xhttp.send();
 }
+
+// Send form information via ajax [not really yet, using FormData API
+// https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#Submitting_forms_and_uploading_files
+// https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_forms_through_JavaScript
+function sendFormAjax(filename = "ajax-form-result.php", resultHtmlId = "ajax-form-result", formSubmitted) {
+    // Create a new request object to store the data in
+    var xhttp = new XMLHttpRequest();
+
+    // Create formData object to keep all the forms data
+    var data = new FormData(formSubmitted);
+
+    // Specify the request, don't do anything yet (third parameter is for asynchronous request)
+    xhttp.open("POST", filename, true);
+
+    // Define what to do when the request changes
+    xhttp.onreadystatechange = function () {
+        if (this.readyState === 4 && this.status === 200) {
+            // Write the content
+            document.getElementById(resultHtmlId).innerHTML = this.responseText;
+        }
+    };
+
+    // Send the actual request with the formData
+    xhttp.send(data);
+}
+
 function DynamicJS () {
     var CookieContent = document.cookie;
     var CookieContentSliced = CookieContent.slice(10,105);

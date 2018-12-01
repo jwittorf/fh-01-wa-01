@@ -122,6 +122,9 @@
                                         class="glyphicon glyphicon-refresh"></i></button>
                             </div>
                         </form>
+                        <!-- Load the result of the form into this div via ajax -->
+                        <div id="ajax-form-result">
+                        </div>
                     </section>
                     <section id = "JS-Clientinformation">
                         <header>
