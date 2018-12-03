@@ -130,14 +130,18 @@
                     </section>
                     <section id="JS-Clientinformation">
                         <header>
-                            <h1>Dieser Inhalt wird dynamisch per Javascript geladen</h1>
+                            <h1>
+                                Dieser Inhalt wird dynamisch per Javascript geladen
+                            </h1>
                         </header>
                         <p id="Browser"></p>
                         <p id="Cookie"></p>
                     </section>
                     <section id="Debugger-Button">
                             <header>
-                                <h1>Hier befindet sich unser Button zum Testen vom Debugger</h1>
+                                <h1>
+                                    Hier befindet sich unser Button zum Testen vom Debugger
+                                </h1>
                             </header>
                             <button type="button" class="btn btn-default" id="buttonDebugger">Debugger <i
                                 class="glyphicon glyphicon-search"></i></button>
