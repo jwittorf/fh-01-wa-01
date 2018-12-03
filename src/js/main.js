@@ -96,8 +96,8 @@ function paintCanvas(htmlId = "demo-canvas") {
             centerY = cHeight / 2,
             dimension = 50,
             counter = 0,
-            posX = centerX - dimension,
-            posY = centerY - dimension;
+            posX = centerX - dimension + (dimension / 2),
+            posY = centerY - dimension + (dimension + dimension / 2);
         // Go to 0
         ctx.moveTo(posX, posY);
         ctx.strokeStyle = "#ff0000";
@@ -123,7 +123,7 @@ function paintCanvas(htmlId = "demo-canvas") {
                 case 2:
                     ctx.beginPath();
                     ctx.moveTo(posX, posY);
-                    posX += dimension * 2;
+                    posX += dimension;
                     // Go right to 2
                     ctx.lineTo(posX, posY);
                     ctx.stroke();
@@ -139,7 +139,7 @@ function paintCanvas(htmlId = "demo-canvas") {
                 case 4:
                     ctx.beginPath();
                     ctx.moveTo(posX, posY);
-                    posX -=dimension * 2;
+                    posX -= dimension;
                     // Go left to 4
                     ctx.lineTo(posX, posY);
                     ctx.stroke();
@@ -147,15 +147,15 @@ function paintCanvas(htmlId = "demo-canvas") {
                     switch (ctx.strokeStyle) {
                         // red
                         case "#ff0000":
-                            ctx.strokeStyle = "green";
+                            ctx.strokeStyle = "#48ff00";
                             break;
                         // green
-                        case "#008000":
-                            ctx.strokeStyle = "orange";
+                        case "#48ff00":
+                            ctx.strokeStyle = "#ff00f2";
                             break;
-                        // orange
-                        case "#ffa500":
-                            ctx.strokeStyle = "red";
+                        // fucsia
+                        case "#ff00f2":
+                            ctx.strokeStyle = "#ff0000";
                             break;
                     }
                     counter = 0;
