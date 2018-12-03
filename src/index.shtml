@@ -150,7 +150,7 @@
                         </header>
                         <button class="btn btn-default" id="canvas-button">Zeichnen starten</button>
                         <hr>
-                        <canvas id="demo-canvas">
+                        <canvas id="demo-canvas" width="300" height="300">
                         </canvas>
                     </section>
                 </div>
