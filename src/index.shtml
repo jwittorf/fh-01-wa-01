@@ -134,8 +134,8 @@
                                 Dieser Inhalt wird dynamisch per Javascript geladen
                             </h1>
                         </header>
-                        <p id="Browser"></p>
-                        <p id="Cookie"></p>
+                        <div id="Browser"></div>
+                        <div id="Cookie"></div>
                     </section>
                     <section id="Debugger-Button">
                             <header>

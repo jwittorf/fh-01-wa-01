@@ -101,7 +101,6 @@ function paintCanvas(htmlId = "demo-canvas") {
         // Go to 0
         ctx.moveTo(posX, posY);
         ctx.strokeStyle = "#ff0000";
-        // TODO: get widths right again
         /*
         1       2
 
