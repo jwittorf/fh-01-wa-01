@@ -21,7 +21,7 @@ function loadDocument(filename = "ajax/hello-world.txt", resultHtmlId = "ajax-de
     xhttp.send();
 }
 
-// Send form information via ajax [not really yet, using FormData API
+// Send form information via ajax
 // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest#Submitting_forms_and_uploading_files
 // https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Sending_forms_through_JavaScript
 function sendFormAjax(filename = "ajax-form-result.php", resultHtmlId = "ajax-form-result", formSubmitted) {
