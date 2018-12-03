@@ -120,18 +120,24 @@ function paintCanvas(htmlId = "demo-canvas") {
                     ctx.stroke();
                     break;
                 case 2:
+                    ctx.beginPath();
+                    ctx.moveTo(posX, posY);
                     posX += dimension * 2;
                     // Go right to 2
                     ctx.lineTo(posX, posY);
                     ctx.stroke();
                     break;
                 case 3:
+                    ctx.beginPath();
+                    ctx.moveTo(posX, posY);
                     posY += dimension;
                     // Go down to 3
                     ctx.lineTo(posX, posY);
                     ctx.stroke();
                     break;
                 case 4:
+                    ctx.beginPath();
+                    ctx.moveTo(posX, posY);
                     posX -=dimension * 2;
                     // Go left to 4
                     ctx.lineTo(posX, posY);
