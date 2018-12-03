@@ -53,10 +53,10 @@ function sendFormAjax(filename = "ajax-form-result.php", resultHtmlId = "ajax-fo
 function DynamicJS () {
     var CookieContent = document.cookie;
     var CookieContentSliced = CookieContent.slice(CookieContent.indexOf("=") + 1,CookieContent.lastIndexOf(")") + 1);
-    document.getElementById("Browser").innerHTML = "Offizieller Name Ihres Browsers: " + navigator.appName + "<br>"
-                                                 + "Version Ihres Browsers: " + navigator.appVersion + "<br>"
-                                                 + "HTTP Indentifikation Ihres Browsers: " + navigator.userAgent + "<br>";
-    document.getElementById("Cookie").innerHTML  =  CookieContentSliced;
+    document.getElementById("Browser").innerHTML = "<div class='list-group'><div class='list-group-item'><h3 class='list-group-item-heading'>Offizieller Name Ihres Browsers:</h3><p class='list-group-item-text'>" + navigator.appName + "</p></div>"
+                                                 + "<div class='list-group-item'><h3 class='list-group-item-heading'>Version Ihres Browsers: </h3><p class='list-group-item-text'>" + navigator.appVersion + "</p></div>"
+                                                 + "<div class='list-group-item'><h3 class='list-group-item-heading'>HTTP Indentifikation Ihres Browsers: </h3><p class='list-group-item-text'>" + navigator.userAgent + "</p></div></div>";
+    document.getElementById("Cookie").innerHTML  =  "<div class='list-group'><div class='list-group-item'><h3 class='list-group-item-heading'>Inhalt des Cookies</h3><p class='list-group-item-text'>" + CookieContentSliced + "</p></div></div>";
     console.log("Die Funktion DynamicJS wurde aufgerufen");
     console.log(navigator.appName);
     console.log(navigator.appVersion);
