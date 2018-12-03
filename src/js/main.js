@@ -136,13 +136,17 @@ function paintCanvas(htmlId = "demo-canvas") {
                     // Go left to 4
                     ctx.lineTo(posX, posY);
                     ctx.stroke();
+                    // change color for next run
                     switch (ctx.strokeStyle) {
+                        // red
                         case "#ff0000":
                             ctx.strokeStyle = "green";
                             break;
+                        // green
                         case "#008000":
                             ctx.strokeStyle = "orange";
                             break;
+                        // orange
                         case "#ffa500":
                             ctx.strokeStyle = "red";
                             break;
