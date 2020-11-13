@@ -1,6 +1,12 @@
 # Make sure that directory listings are disabled.
 Options -Indexes
 
+# For SSI
+DirectoryIndex index.shtml
+Options +Includes
+#AddHandler server-parsed .shtml
+#AddOutputFilter INCLUDES .shtml
+
 # Don't let apache guess any filenames
 <IfModule mod_negotiation.c>
 	Options -MultiViews
